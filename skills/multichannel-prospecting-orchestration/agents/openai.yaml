@@ -1,0 +1,4 @@
+interface:
+  display_name: "multichannel prospecting orchestration"
+  short_description: "Coordinate prospecting across channels with owner handoff rules"
+  default_prompt: "Use $multichannel-prospecting-orchestration to produce multichannel prospecting map."

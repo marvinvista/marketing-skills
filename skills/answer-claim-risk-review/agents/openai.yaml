@@ -1,0 +1,4 @@
+interface:
+  display_name: "answer claim risk review"
+  short_description: "Review AI answer text for claim, accuracy, and brand risk"
+  default_prompt: "Use $answer-claim-risk-review to produce answer risk review and correction plan."

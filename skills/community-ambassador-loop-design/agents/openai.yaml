@@ -1,0 +1,4 @@
+interface:
+  display_name: "community ambassador loop design"
+  short_description: "Build an ambassador or advocacy loop with proof generation"
+  default_prompt: "Use $community-ambassador-loop-design to produce ambassador loop plan."

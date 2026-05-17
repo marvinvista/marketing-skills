@@ -1,0 +1,4 @@
+interface:
+  display_name: "campaign preflight QA checklist"
+  short_description: "QA campaigns before they go live with rollback coverage"
+  default_prompt: "Use $campaign-preflight-qa-checklist to produce campaign preflight checklist."

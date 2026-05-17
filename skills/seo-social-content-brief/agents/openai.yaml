@@ -1,0 +1,4 @@
+interface:
+  display_name: "SEO social content brief"
+  short_description: "Create content briefs that work for search and social"
+  default_prompt: "Use $seo-social-content-brief to produce SEO/social content brief."

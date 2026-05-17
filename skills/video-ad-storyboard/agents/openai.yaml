@@ -1,0 +1,4 @@
+interface:
+  display_name: "video ad storyboard"
+  short_description: "Storyboard video ads from campaign inputs and production constraints"
+  default_prompt: "Use $video-ad-storyboard to produce video storyboard and shot list."

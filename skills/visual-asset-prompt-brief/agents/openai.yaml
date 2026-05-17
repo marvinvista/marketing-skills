@@ -1,0 +1,4 @@
+interface:
+  display_name: "visual asset prompt brief"
+  short_description: "Specify AI-generated visual assets for campaign production"
+  default_prompt: "Use $visual-asset-prompt-brief to produce visual prompt brief and production notes."

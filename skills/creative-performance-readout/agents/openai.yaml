@@ -1,0 +1,4 @@
+interface:
+  display_name: "creative performance readout"
+  short_description: "Analyze creative results and choose next tests"
+  default_prompt: "Use $creative-performance-readout to produce creative readout and next-test backlog."

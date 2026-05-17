@@ -1,0 +1,4 @@
+interface:
+  display_name: "event lead capture follow-up"
+  short_description: "Convert event leads into follow-up and sales actions"
+  default_prompt: "Use $event-lead-capture-followup to produce event follow-up plan."

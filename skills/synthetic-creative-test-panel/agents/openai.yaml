@@ -1,0 +1,4 @@
+interface:
+  display_name: "synthetic creative test panel"
+  short_description: "Stress-test creative concepts with synthetic audience assumptions"
+  default_prompt: "Use $synthetic-creative-test-panel to produce synthetic creative test panel."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "synthetic audience panel builder"
+  short_description: "Build a synthetic audience panel with validation limits"
+  default_prompt: "Use $synthetic-audience-panel-builder to produce synthetic panel spec."

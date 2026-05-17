@@ -1,0 +1,4 @@
+interface:
+  display_name: "social content calendar system"
+  short_description: "Plan social content around repeatable campaign mechanics"
+  default_prompt: "Use $social-content-calendar-system to produce social calendar and posting system."

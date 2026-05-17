@@ -1,0 +1,4 @@
+interface:
+  display_name: "email template system"
+  short_description: "Create reusable campaign email templates with QA states"
+  default_prompt: "Use $email-template-system to produce email template system."

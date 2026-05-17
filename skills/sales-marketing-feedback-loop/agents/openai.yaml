@@ -1,0 +1,4 @@
+interface:
+  display_name: "sales marketing feedback loop"
+  short_description: "Use sales feedback to improve targeting and messaging"
+  default_prompt: "Use $sales-marketing-feedback-loop to produce sales feedback loop."

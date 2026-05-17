@@ -1,0 +1,4 @@
+interface:
+  display_name: "answer-led list hypothesis panel"
+  short_description: "Use answer gaps to sharpen list hypotheses before outreach"
+  default_prompt: "Use $answer-led-list-hypothesis-panel to produce answer-led list hypothesis panel."

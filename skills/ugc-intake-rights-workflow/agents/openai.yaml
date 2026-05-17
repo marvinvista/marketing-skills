@@ -1,0 +1,4 @@
+interface:
+  display_name: "UGC intake rights workflow"
+  short_description: "Turn UGC into reusable approved assets with rights tracking"
+  default_prompt: "Use $ugc-intake-rights-workflow to produce UGC intake and rights workflow."

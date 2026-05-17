@@ -1,0 +1,4 @@
+interface:
+  display_name: "agentic list building workflow"
+  short_description: "Design agent-assisted list building with evidence and routing controls"
+  default_prompt: "Use $agentic-list-building-workflow to produce agentic list building workflow."

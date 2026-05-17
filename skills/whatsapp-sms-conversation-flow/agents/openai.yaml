@@ -1,0 +1,4 @@
+interface:
+  display_name: "WhatsApp SMS conversation flow"
+  short_description: "Build messaging campaign flows with compliance and handoff checks"
+  default_prompt: "Use $whatsapp-sms-conversation-flow to produce messaging conversation flow."

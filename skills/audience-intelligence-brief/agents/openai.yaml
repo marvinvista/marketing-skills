@@ -1,0 +1,4 @@
+interface:
+  display_name: "audience intelligence brief"
+  short_description: "Convert audience data into campaign decisions and channel choices"
+  default_prompt: "Use $audience-intelligence-brief to produce audience intelligence brief."

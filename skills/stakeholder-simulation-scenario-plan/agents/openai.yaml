@@ -1,0 +1,4 @@
+interface:
+  display_name: "stakeholder simulation scenario plan"
+  short_description: "Plan stakeholder reaction simulations for launch or message decisions"
+  default_prompt: "Use $stakeholder-simulation-scenario-plan to produce simulation scenario plan."

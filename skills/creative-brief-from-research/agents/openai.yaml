@@ -1,0 +1,4 @@
+interface:
+  display_name: "creative brief from research"
+  short_description: "Turn research into a brief for ads, landing pages, or assets"
+  default_prompt: "Use $creative-brief-from-research to produce creative brief with claims, proof, and constraints."

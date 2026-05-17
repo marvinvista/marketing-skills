@@ -1,0 +1,4 @@
+interface:
+  display_name: "audience sync contract"
+  short_description: "Move audiences between systems reliably with field contracts"
+  default_prompt: "Use $audience-sync-contract to produce audience sync contract."

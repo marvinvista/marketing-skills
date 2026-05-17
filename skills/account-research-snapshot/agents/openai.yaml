@@ -1,0 +1,4 @@
+interface:
+  display_name: "account research snapshot"
+  short_description: "Create concise account research for personalized outbound outreach"
+  default_prompt: "Use $account-research-snapshot to produce account research snapshot."

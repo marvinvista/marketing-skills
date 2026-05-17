@@ -1,0 +1,4 @@
+interface:
+  display_name: "agentic video production workflow"
+  short_description: "Plan AI-assisted video ad production with review gates"
+  default_prompt: "Use $agentic-video-production-workflow to produce agentic video production workflow."

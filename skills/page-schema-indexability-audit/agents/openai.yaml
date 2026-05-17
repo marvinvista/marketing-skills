@@ -1,0 +1,4 @@
+interface:
+  display_name: "page schema indexability audit"
+  short_description: "Audit indexability and structured proof for AI discovery"
+  default_prompt: "Use $page-schema-indexability-audit to produce indexability audit and implementation tickets."

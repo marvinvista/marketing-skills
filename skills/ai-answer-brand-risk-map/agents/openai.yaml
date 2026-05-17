@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI answer brand risk map"
+  short_description: "Map AI answer visibility into brand and claim risk actions"
+  default_prompt: "Use $ai-answer-brand-risk-map to produce AI answer brand risk map."

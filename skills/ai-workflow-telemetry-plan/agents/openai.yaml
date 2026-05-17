@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI workflow telemetry plan"
+  short_description: "Measure AI workflow performance beyond output volume"
+  default_prompt: "Use $ai-workflow-telemetry-plan to produce AI workflow telemetry plan."

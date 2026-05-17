@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI shopping feed optimizer"
+  short_description: "Improve product inclusion and ranking in AI shopping answers"
+  default_prompt: "Use $ai-shopping-feed-optimizer to produce shopping feed optimization plan."

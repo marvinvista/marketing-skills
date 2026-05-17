@@ -1,0 +1,4 @@
+interface:
+  display_name: "brand compliance creative review"
+  short_description: "Review creative before launch, reuse, or paid amplification"
+  default_prompt: "Use $brand-compliance-creative-review to produce creative compliance review."

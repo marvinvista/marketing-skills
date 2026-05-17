@@ -1,0 +1,4 @@
+interface:
+  display_name: "creative lead capture loop"
+  short_description: "Turn paid or organic creative into a lead-capture operating loop"
+  default_prompt: "Use $creative-lead-capture-loop to produce creative lead-capture loop."

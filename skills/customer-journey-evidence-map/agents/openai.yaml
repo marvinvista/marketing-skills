@@ -1,0 +1,4 @@
+interface:
+  display_name: "customer journey evidence map"
+  short_description: "Map the buyer journey from evidence and conversion gaps"
+  default_prompt: "Use $customer-journey-evidence-map to produce journey evidence map."

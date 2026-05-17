@@ -1,0 +1,4 @@
+interface:
+  display_name: "event content reuse system"
+  short_description: "Repurpose event content into campaign assets and follow-up"
+  default_prompt: "Use $event-content-reuse-system to produce event content reuse system."

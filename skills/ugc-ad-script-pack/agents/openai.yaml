@@ -1,0 +1,4 @@
+interface:
+  display_name: "UGC ad script pack"
+  short_description: "Create UGC-style ad scripts for paid or organic use"
+  default_prompt: "Use $ugc-ad-script-pack to produce UGC script pack."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "ICP segment trigger map"
+  short_description: "Map ideal segments and buying triggers for campaign action"
+  default_prompt: "Use $icp-segment-trigger-map to produce ICP trigger map."

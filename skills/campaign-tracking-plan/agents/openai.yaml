@@ -1,0 +1,4 @@
+interface:
+  display_name: "campaign tracking plan"
+  short_description: "Plan campaign tracking before launch with QA ownership"
+  default_prompt: "Use $campaign-tracking-plan to produce campaign tracking plan."

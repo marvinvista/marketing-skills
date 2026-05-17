@@ -1,0 +1,4 @@
+interface:
+  display_name: "lifecycle segmentation map"
+  short_description: "Create lifecycle audience segmentation with transitions and owner actions"
+  default_prompt: "Use $lifecycle-segmentation-map to produce lifecycle segmentation map."

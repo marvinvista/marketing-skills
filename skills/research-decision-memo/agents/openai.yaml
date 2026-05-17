@@ -1,0 +1,4 @@
+interface:
+  display_name: "research decision memo"
+  short_description: "Turn research into a decision with confidence and tradeoffs"
+  default_prompt: "Use $research-decision-memo to produce research decision memo."

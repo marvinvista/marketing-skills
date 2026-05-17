@@ -1,0 +1,4 @@
+interface:
+  display_name: "intent-led outbound sequence"
+  short_description: "Create outbound sequences from intent signals and proof points"
+  default_prompt: "Use $intent-led-outbound-sequence to produce intent-led email sequence."

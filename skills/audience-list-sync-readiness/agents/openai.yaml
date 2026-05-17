@@ -1,0 +1,4 @@
+interface:
+  display_name: "audience list sync readiness"
+  short_description: "Check whether a lead list is ready for audience activation"
+  default_prompt: "Use $audience-list-sync-readiness to produce audience list sync readiness check."

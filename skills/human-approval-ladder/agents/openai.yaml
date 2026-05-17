@@ -1,0 +1,4 @@
+interface:
+  display_name: "human approval ladder"
+  short_description: "Set approval rules for AI-assisted marketing by risk level"
+  default_prompt: "Use $human-approval-ladder to produce approval ladder."

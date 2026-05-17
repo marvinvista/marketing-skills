@@ -1,0 +1,4 @@
+interface:
+  display_name: "search creative message bridge"
+  short_description: "Turn AI answer insights into testable creative messaging"
+  default_prompt: "Use $search-creative-message-bridge to produce search-to-creative message bridge."

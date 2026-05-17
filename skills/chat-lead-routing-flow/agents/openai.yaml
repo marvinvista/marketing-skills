@@ -1,0 +1,4 @@
+interface:
+  display_name: "chat lead routing flow"
+  short_description: "Move chat-qualified visitors into the right list and follow-up path"
+  default_prompt: "Use $chat-lead-routing-flow to produce chat lead routing flow."

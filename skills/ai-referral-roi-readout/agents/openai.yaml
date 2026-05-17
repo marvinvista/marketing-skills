@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI referral ROI readout"
+  short_description: "Measure AI-search and answer-surface traffic value with attribution caveats"
+  default_prompt: "Use $ai-referral-roi-readout to produce AI referral readout and dashboard spec."

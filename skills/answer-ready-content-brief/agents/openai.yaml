@@ -1,0 +1,4 @@
+interface:
+  display_name: "answer-ready content brief"
+  short_description: "Produce briefs for answer-ready pages or docs"
+  default_prompt: "Use $answer-ready-content-brief to produce answer-ready content brief."

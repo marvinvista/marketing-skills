@@ -1,0 +1,4 @@
+interface:
+  display_name: "chat creative conversion plan"
+  short_description: "Connect creative promises to inbound chat conversion paths"
+  default_prompt: "Use $chat-creative-conversion-plan to produce chat creative conversion plan."

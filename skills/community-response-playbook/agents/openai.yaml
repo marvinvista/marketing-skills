@@ -1,0 +1,4 @@
+interface:
+  display_name: "community response playbook"
+  short_description: "Create social or community response guidance for repeat questions"
+  default_prompt: "Use $community-response-playbook to produce community response playbook."

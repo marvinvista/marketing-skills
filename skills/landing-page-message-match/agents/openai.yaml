@@ -1,0 +1,4 @@
+interface:
+  display_name: "landing page message match"
+  short_description: "Design landing-page variants matched to ad angles"
+  default_prompt: "Use $landing-page-message-match to produce message-match landing page spec."

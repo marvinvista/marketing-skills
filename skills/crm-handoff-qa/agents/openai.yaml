@@ -1,0 +1,4 @@
+interface:
+  display_name: "CRM handoff QA"
+  short_description: "QA the handoff from marketing signal to CRM action"
+  default_prompt: "Use $crm-handoff-qa to produce CRM handoff QA checklist."

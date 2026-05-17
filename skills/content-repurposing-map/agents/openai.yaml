@@ -1,0 +1,4 @@
+interface:
+  display_name: "content repurposing map"
+  short_description: "Repurpose long-form or campaign assets across channels"
+  default_prompt: "Use $content-repurposing-map to produce content repurposing map."

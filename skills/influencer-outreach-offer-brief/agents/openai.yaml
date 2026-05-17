@@ -1,0 +1,4 @@
+interface:
+  display_name: "influencer outreach offer brief"
+  short_description: "Brief creator outreach and partnership offers with usage terms"
+  default_prompt: "Use $influencer-outreach-offer-brief to produce creator outreach brief."

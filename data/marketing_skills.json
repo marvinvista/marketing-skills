@@ -1,0 +1,1532 @@
+{
+  "compiled_on": "2026-05-17",
+  "skill_count": 116,
+  "evidence_boundary": "Private evidence map is maintained outside this repository.",
+  "skills": [
+    {
+      "name": "agent-discovery-question-map",
+      "display_name": "agent discovery question map",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "map buyer questions to the answer engines, agents, and proof assets that can influence discovery",
+      "one_line_description": "Turn buyer questions into a prioritized answer-engine inspection map.",
+      "output": "question map, prompt set, and proof inventory",
+      "surfaces": [
+        "ai-search-visibility-monitoring",
+        "answer-source-remediation"
+      ],
+      "script": null
+    },
+    {
+      "name": "ai-answer-visibility-scorecard",
+      "display_name": "AI answer visibility scorecard",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "score brand visibility, answer accuracy, citation quality, and next-action usefulness across answer surfaces",
+      "one_line_description": "Audit how a brand, product, or category appears in AI answers.",
+      "output": "visibility scorecard with remediation backlog",
+      "surfaces": [
+        "ai-search-visibility-monitoring",
+        "answer-source-remediation"
+      ],
+      "script": null
+    },
+    {
+      "name": "prompt-rank-monitor",
+      "display_name": "prompt rank monitor",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "build a reusable prompt-rank table for answer engines and competitor comparisons",
+      "one_line_description": "Track answer-engine rank and mention quality across a repeatable prompt set.",
+      "output": "prompt-rank table and monitoring cadence",
+      "surfaces": [
+        "ai-search-visibility-monitoring"
+      ],
+      "script": "build_prompt_rank_table.py"
+    },
+    {
+      "name": "share-of-answer-benchmark",
+      "display_name": "share of answer benchmark",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "compare answer share, entity mentions, claim framing, and competitor displacement opportunities",
+      "one_line_description": "Benchmark answer share against competitors and alternatives.",
+      "output": "share-of-answer report",
+      "surfaces": [
+        "ai-search-visibility-monitoring",
+        "customer-research-synthesis"
+      ],
+      "script": null
+    },
+    {
+      "name": "citation-source-gap-map",
+      "display_name": "citation source gap map",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "identify cited and uncited proof assets, pages, listings, and third-party references",
+      "one_line_description": "Find the proof assets answer engines cite, miss, or distort.",
+      "output": "citation gap map and proof backlog",
+      "surfaces": [
+        "answer-source-remediation",
+        "seo-content-briefing"
+      ],
+      "script": null
+    },
+    {
+      "name": "citable-proof-asset-kit",
+      "display_name": "citable proof asset kit",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "package claims, proof, press, docs, FAQs, and comparison assets so answers have better evidence to cite",
+      "one_line_description": "Create citable proof assets for AI answers and search surfaces.",
+      "output": "proof kit and publishing checklist",
+      "surfaces": [
+        "answer-source-remediation",
+        "brand-governance-review"
+      ],
+      "script": null
+    },
+    {
+      "name": "answer-ready-content-brief",
+      "display_name": "answer-ready content brief",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "write content briefs for missing questions with answer structure, evidence, and schema needs",
+      "one_line_description": "Produce briefs for answer-ready pages or docs.",
+      "output": "answer-ready content brief",
+      "surfaces": [
+        "seo-content-briefing",
+        "answer-source-remediation"
+      ],
+      "script": null
+    },
+    {
+      "name": "page-schema-indexability-audit",
+      "display_name": "page schema indexability audit",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "check whether pages, structured data, feeds, and crawl paths expose the proof agents need",
+      "one_line_description": "Audit indexability and structured proof for AI discovery.",
+      "output": "indexability audit and implementation tickets",
+      "surfaces": [
+        "seo-content-briefing",
+        "answer-source-remediation"
+      ],
+      "script": null
+    },
+    {
+      "name": "ai-shopping-feed-optimizer",
+      "display_name": "AI shopping feed optimizer",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "optimize product feed, PDP, FAQ, image, and checkout signals for AI shopping inclusion",
+      "one_line_description": "Improve product inclusion and ranking in AI shopping answers.",
+      "output": "shopping feed optimization plan",
+      "surfaces": [
+        "ai-search-visibility-monitoring",
+        "product-image-generation",
+        "seo-content-briefing"
+      ],
+      "script": null
+    },
+    {
+      "name": "agent-action-backlog",
+      "display_name": "agent action backlog",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "convert visibility gaps into the smallest on-page, off-page, data, and workflow actions to ship",
+      "one_line_description": "Prioritize actions that improve agent discovery and answer inclusion.",
+      "output": "ranked agent-discovery action backlog",
+      "surfaces": [
+        "ai-search-visibility-monitoring",
+        "answer-source-remediation",
+        "marketing-ops-orchestration"
+      ],
+      "script": null
+    },
+    {
+      "name": "ai-referral-roi-readout",
+      "display_name": "AI referral ROI readout",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "read AI referrals, bot traffic, assisted conversion, and revenue signal without over-claiming attribution",
+      "one_line_description": "Measure AI-search and answer-surface traffic value with attribution caveats.",
+      "output": "AI referral readout and dashboard spec",
+      "surfaces": [
+        "ai-search-visibility-monitoring",
+        "campaign-analytics-qa"
+      ],
+      "script": null
+    },
+    {
+      "name": "generative-search-weekly-ops-report",
+      "display_name": "generative search weekly ops report",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "turn answer visibility, citation gaps, traffic signal, and shipped fixes into a recurring operator report",
+      "one_line_description": "Create a recurring operating report for AI visibility work.",
+      "output": "weekly ops report with actions",
+      "surfaces": [
+        "ai-search-visibility-monitoring",
+        "answer-source-remediation",
+        "campaign-analytics-qa"
+      ],
+      "script": null
+    },
+    {
+      "name": "answer-claim-risk-review",
+      "display_name": "answer claim risk review",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "review AI answers for unsupported claims, stale positioning, missing caveats, and brand-risky phrasing",
+      "one_line_description": "Review AI answer text for claim, accuracy, and brand risk.",
+      "output": "answer risk review and correction plan",
+      "surfaces": [
+        "brand-governance-review",
+        "answer-source-remediation"
+      ],
+      "script": null
+    },
+    {
+      "name": "agent-discovery-content-refresh-plan",
+      "display_name": "agent discovery content refresh plan",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "refresh stale pages, FAQs, comparison copy, and proof assets based on answer-surface gaps",
+      "one_line_description": "Plan content refreshes that improve AI discovery.",
+      "output": "refresh plan and CMS handoff",
+      "surfaces": [
+        "seo-content-briefing",
+        "ai-search-visibility-monitoring"
+      ],
+      "script": null
+    },
+    {
+      "name": "agentic-answer-ops-workflow",
+      "display_name": "agentic answer ops workflow",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "orchestrate AI answer monitoring, evidence lookup, remediation actions, review gates, and telemetry",
+      "one_line_description": "Design agent-assisted operations for AI answer visibility and remediation.",
+      "output": "agentic answer ops workflow",
+      "surfaces": [
+        "ai-marketing-agent-workflow",
+        "ai-search-visibility-monitoring",
+        "answer-source-remediation"
+      ],
+      "script": null
+    },
+    {
+      "name": "ai-answer-brand-risk-map",
+      "display_name": "AI answer brand risk map",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "connect answer visibility observations to brand risk, claim status, proof gaps, and correction owners",
+      "one_line_description": "Map AI answer visibility into brand and claim risk actions.",
+      "output": "AI answer brand risk map",
+      "surfaces": [
+        "ai-search-visibility-monitoring",
+        "brand-governance-review",
+        "answer-source-remediation"
+      ],
+      "script": null
+    },
+    {
+      "name": "seo-brand-proof-governance",
+      "display_name": "SEO brand proof governance",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "govern search and answer-ready content by approved proof, schema needs, claim risk, and publish decisions",
+      "one_line_description": "Review SEO and AI-search briefs for proof, brand, and claim readiness.",
+      "output": "SEO proof governance brief",
+      "surfaces": [
+        "seo-content-briefing",
+        "brand-governance-review",
+        "answer-source-remediation"
+      ],
+      "script": null
+    },
+    {
+      "name": "search-creative-message-bridge",
+      "display_name": "search creative message bridge",
+      "category": "AI Search / Agent Discovery",
+      "mechanic": "translate answer-surface insights into creative angles, proof reuse, channel messages, and next tests",
+      "one_line_description": "Turn AI answer insights into testable creative messaging.",
+      "output": "search-to-creative message bridge",
+      "surfaces": [
+        "ai-search-visibility-monitoring",
+        "ad-creative-generation",
+        "customer-research-synthesis"
+      ],
+      "script": null
+    },
+    {
+      "name": "offer-angle-mining",
+      "display_name": "offer angle mining",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "mine research, reviews, competitor ads, and sales objections for offer angles worth testing",
+      "one_line_description": "Find the strongest campaign angles before writing creative.",
+      "output": "offer angle map",
+      "surfaces": [
+        "ad-creative-generation",
+        "customer-research-synthesis"
+      ],
+      "script": null
+    },
+    {
+      "name": "creative-brief-from-research",
+      "display_name": "creative brief from research",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "convert audience insight, proof, and objections into a production-ready creative brief",
+      "one_line_description": "Turn research into a brief for ads, landing pages, or assets.",
+      "output": "creative brief with claims, proof, and constraints",
+      "surfaces": [
+        "ad-creative-generation",
+        "customer-research-synthesis"
+      ],
+      "script": null
+    },
+    {
+      "name": "ad-variant-matrix-builder",
+      "display_name": "ad variant matrix builder",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "generate a controlled variant matrix across hooks, angles, proof, CTAs, and formats",
+      "one_line_description": "Create structured ad variants for controlled creative testing.",
+      "output": "creative variant matrix",
+      "surfaces": [
+        "ad-creative-generation",
+        "message-testing"
+      ],
+      "script": "build_variant_matrix.py"
+    },
+    {
+      "name": "visual-asset-prompt-brief",
+      "display_name": "visual asset prompt brief",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "write generation prompts and production notes for image, video, and mixed-media ad assets",
+      "one_line_description": "Specify AI-generated visual assets for campaign production.",
+      "output": "visual prompt brief and production notes",
+      "surfaces": [
+        "ad-creative-generation",
+        "product-image-generation"
+      ],
+      "script": null
+    },
+    {
+      "name": "product-image-qa-brief",
+      "display_name": "product image QA brief",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "define product image generation constraints, shot types, merchandising context, and QA checks",
+      "one_line_description": "Create and QA product imagery for commerce or ads.",
+      "output": "product image brief and QA checklist",
+      "surfaces": [
+        "product-image-generation",
+        "ad-creative-generation"
+      ],
+      "script": null
+    },
+    {
+      "name": "catalog-ad-feed-plan",
+      "display_name": "catalog ad feed plan",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "turn product attributes, audience segments, and creative rules into a catalog ad feed plan",
+      "one_line_description": "Build repeatable catalog creative from product data.",
+      "output": "catalog creative feed plan",
+      "surfaces": [
+        "ad-creative-generation",
+        "product-image-generation",
+        "audience-data-sync"
+      ],
+      "script": null
+    },
+    {
+      "name": "video-ad-storyboard",
+      "display_name": "video ad storyboard",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "structure video ads into hook, proof, product moment, objection, CTA, and edit notes",
+      "one_line_description": "Storyboard video ads from campaign inputs and production constraints.",
+      "output": "video storyboard and shot list",
+      "surfaces": [
+        "video-ad-production",
+        "ad-creative-generation"
+      ],
+      "script": null
+    },
+    {
+      "name": "short-form-hook-bank",
+      "display_name": "short-form hook bank",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "generate platform-specific hooks for short-form video while preserving proof and CTA",
+      "one_line_description": "Build a hook bank for short-form creative testing.",
+      "output": "hook bank and test notes",
+      "surfaces": [
+        "video-ad-production",
+        "social-content-automation"
+      ],
+      "script": null
+    },
+    {
+      "name": "ugc-ad-script-pack",
+      "display_name": "UGC ad script pack",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "write creator-style ad scripts with believable hooks, proof moments, and usage constraints",
+      "one_line_description": "Create UGC-style ad scripts for paid or organic use.",
+      "output": "UGC script pack",
+      "surfaces": [
+        "ugc-creator-workflow",
+        "ad-creative-generation"
+      ],
+      "script": null
+    },
+    {
+      "name": "landing-page-message-match",
+      "display_name": "landing page message match",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "align ad angle, page headline, proof, objections, CTA, and tracking for a conversion path",
+      "one_line_description": "Design landing-page variants matched to ad angles.",
+      "output": "message-match landing page spec",
+      "surfaces": [
+        "ad-creative-generation",
+        "message-testing",
+        "seo-content-briefing"
+      ],
+      "script": null
+    },
+    {
+      "name": "competitor-ad-teardown",
+      "display_name": "competitor ad teardown",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "reverse engineer competitor angles, proof, offers, formats, and gaps without copying execution",
+      "one_line_description": "Analyze competitor ads for testable creative opportunities.",
+      "output": "competitor ad teardown",
+      "surfaces": [
+        "ad-creative-generation",
+        "customer-research-synthesis"
+      ],
+      "script": null
+    },
+    {
+      "name": "creative-fatigue-refresh-plan",
+      "display_name": "creative fatigue refresh plan",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "diagnose creative fatigue and plan refreshes by angle, asset, audience, and format",
+      "one_line_description": "Refresh fatigued creative without resetting the learning loop.",
+      "output": "creative refresh plan",
+      "surfaces": [
+        "ad-creative-generation",
+        "campaign-analytics-qa"
+      ],
+      "script": null
+    },
+    {
+      "name": "paid-launch-checklist",
+      "display_name": "paid launch checklist",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "turn creative, targeting, budget, tracking, approvals, and rollback into a launch checklist",
+      "one_line_description": "Prepare a paid campaign for launch with QA coverage.",
+      "output": "paid launch checklist",
+      "surfaces": [
+        "ad-creative-generation",
+        "campaign-analytics-qa",
+        "marketing-ops-orchestration"
+      ],
+      "script": null
+    },
+    {
+      "name": "creative-performance-readout",
+      "display_name": "creative performance readout",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "separate creative signal from tracking, spend, audience, and conversion-path noise",
+      "one_line_description": "Analyze creative results and choose next tests.",
+      "output": "creative readout and next-test backlog",
+      "surfaces": [
+        "ad-creative-generation",
+        "campaign-analytics-qa"
+      ],
+      "script": null
+    },
+    {
+      "name": "brand-compliance-creative-review",
+      "display_name": "brand compliance creative review",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "review ads and assets for claim support, brand fit, legal risk, and platform constraints",
+      "one_line_description": "Review creative before launch, reuse, or paid amplification.",
+      "output": "creative compliance review",
+      "surfaces": [
+        "brand-governance-review",
+        "ad-creative-generation"
+      ],
+      "script": null
+    },
+    {
+      "name": "multilingual-creative-localization",
+      "display_name": "multilingual creative localization",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "localize campaign copy, video, voice, and proof while preserving intent and claim boundaries",
+      "one_line_description": "Localize campaign creative without losing meaning or compliance.",
+      "output": "localized creative plan",
+      "surfaces": [
+        "social-content-automation",
+        "brand-governance-review",
+        "video-ad-production"
+      ],
+      "script": null
+    },
+    {
+      "name": "podcast-audio-ad-read-guide",
+      "display_name": "podcast audio ad read guide",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "write host-read or produced audio ads with pronunciation, timing, claim, and CTA control",
+      "one_line_description": "Create podcast or audio ad copy and read guidance.",
+      "output": "audio ad script and read guide",
+      "surfaces": [
+        "social-content-automation",
+        "ad-creative-generation"
+      ],
+      "script": null
+    },
+    {
+      "name": "multimodal-asset-assembly-brief",
+      "display_name": "multimodal asset assembly brief",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "compose image, video, voice, copy, captions, and landing proof into one coherent asset plan",
+      "one_line_description": "Plan multimodal ad assets across formats and review states.",
+      "output": "multimodal assembly brief",
+      "surfaces": [
+        "ad-creative-generation",
+        "video-ad-production",
+        "product-image-generation",
+        "brand-governance-review"
+      ],
+      "script": null
+    },
+    {
+      "name": "creative-lead-capture-loop",
+      "display_name": "creative lead capture loop",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "connect creative angles to lead signals, capture fields, list rules, follow-up routes, and measurement events",
+      "one_line_description": "Turn paid or organic creative into a lead-capture operating loop.",
+      "output": "creative lead-capture loop",
+      "surfaces": [
+        "ad-creative-generation",
+        "lead-list-building"
+      ],
+      "script": null
+    },
+    {
+      "name": "creative-agent-production-workflow",
+      "display_name": "creative agent production workflow",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "scope an AI workflow for generating creative variants, applying review gates, and handing off approved assets",
+      "one_line_description": "Specify agent-assisted creative production with review and handoff gates.",
+      "output": "creative agent production workflow",
+      "surfaces": [
+        "ad-creative-generation",
+        "ai-marketing-agent-workflow"
+      ],
+      "script": null
+    },
+    {
+      "name": "agentic-video-production-workflow",
+      "display_name": "agentic video production workflow",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "scope agent-assisted video production from script inputs through scene generation, edit checks, and delivery state",
+      "one_line_description": "Plan AI-assisted video ad production with review gates.",
+      "output": "agentic video production workflow",
+      "surfaces": [
+        "ai-marketing-agent-workflow",
+        "video-ad-production"
+      ],
+      "script": null
+    },
+    {
+      "name": "creative-outbound-message-bridge",
+      "display_name": "creative outbound message bridge",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "convert creative angles into outbound hooks, proof points, cadence steps, reply routes, and stop rules",
+      "one_line_description": "Adapt winning creative angles into outbound sequences.",
+      "output": "creative-to-outbound message bridge",
+      "surfaces": [
+        "ad-creative-generation",
+        "outbound-cadence-automation"
+      ],
+      "script": null
+    },
+    {
+      "name": "creative-enrichment-personalization-plan",
+      "display_name": "creative enrichment personalization plan",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "turn enrichment fields into personalization claims, creative variants, confidence checks, and fallback copy",
+      "one_line_description": "Use enrichment fields to personalize creative without overreaching.",
+      "output": "creative personalization plan",
+      "surfaces": [
+        "ad-creative-generation",
+        "lead-enrichment-and-research"
+      ],
+      "script": null
+    },
+    {
+      "name": "synthetic-creative-test-panel",
+      "display_name": "synthetic creative test panel",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "use synthetic audience scenarios to pressure-test creative angles, reactions, confidence, and validation needs",
+      "one_line_description": "Stress-test creative concepts with synthetic audience assumptions.",
+      "output": "synthetic creative test panel",
+      "surfaces": [
+        "synthetic-audience-simulation",
+        "ad-creative-generation",
+        "message-testing"
+      ],
+      "script": null
+    },
+    {
+      "name": "video-seo-content-reuse-plan",
+      "display_name": "video SEO content reuse plan",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "convert video assets into search-answer blocks, social cuts, proof moments, and reuse ownership",
+      "one_line_description": "Repurpose video production into SEO and social content assets.",
+      "output": "video SEO reuse plan",
+      "surfaces": [
+        "video-ad-production",
+        "seo-content-briefing",
+        "social-content-automation"
+      ],
+      "script": null
+    },
+    {
+      "name": "chat-creative-conversion-plan",
+      "display_name": "chat creative conversion plan",
+      "category": "Creative / Ads / Assets",
+      "mechanic": "align ad angles, landing promises, chat questions, qualification rules, and conversion handoff",
+      "one_line_description": "Connect creative promises to inbound chat conversion paths.",
+      "output": "chat creative conversion plan",
+      "surfaces": [
+        "ad-creative-generation",
+        "inbound-chat-qualification",
+        "message-testing"
+      ],
+      "script": null
+    },
+    {
+      "name": "social-content-calendar-system",
+      "display_name": "social content calendar system",
+      "category": "Content / Creator / Social",
+      "mechanic": "turn narrative pillars, campaign moments, and channel rules into a reusable content calendar",
+      "one_line_description": "Plan social content around repeatable campaign mechanics.",
+      "output": "social calendar and posting system",
+      "surfaces": [
+        "social-content-automation"
+      ],
+      "script": null
+    },
+    {
+      "name": "content-repurposing-map",
+      "display_name": "content repurposing map",
+      "category": "Content / Creator / Social",
+      "mechanic": "map one source asset into ads, social posts, emails, landing copy, and sales enablement",
+      "one_line_description": "Repurpose long-form or campaign assets across channels.",
+      "output": "content repurposing map",
+      "surfaces": [
+        "social-content-automation",
+        "seo-content-briefing",
+        "ad-creative-generation"
+      ],
+      "script": null
+    },
+    {
+      "name": "creator-discovery-scorecard",
+      "display_name": "creator discovery scorecard",
+      "category": "Content / Creator / Social",
+      "mechanic": "score creators by audience fit, trust, content quality, risk, usage rights, and expected lift",
+      "one_line_description": "Find and rank creators or influencers for a campaign.",
+      "output": "creator scorecard",
+      "surfaces": [
+        "ugc-creator-workflow",
+        "social-content-automation",
+        "customer-research-synthesis"
+      ],
+      "script": null
+    },
+    {
+      "name": "influencer-outreach-offer-brief",
+      "display_name": "influencer outreach offer brief",
+      "category": "Content / Creator / Social",
+      "mechanic": "draft creator outreach, offer, deliverables, approvals, usage rights, and renewal terms",
+      "one_line_description": "Brief creator outreach and partnership offers with usage terms.",
+      "output": "creator outreach brief",
+      "surfaces": [
+        "ugc-creator-workflow",
+        "social-content-automation",
+        "outbound-cadence-automation"
+      ],
+      "script": null
+    },
+    {
+      "name": "ugc-intake-rights-workflow",
+      "display_name": "UGC intake rights workflow",
+      "category": "Content / Creator / Social",
+      "mechanic": "manage creator asset intake, rights, tagging, approvals, edits, and paid reuse",
+      "one_line_description": "Turn UGC into reusable approved assets with rights tracking.",
+      "output": "UGC intake and rights workflow",
+      "surfaces": [
+        "ugc-creator-workflow",
+        "ad-creative-generation"
+      ],
+      "script": null
+    },
+    {
+      "name": "creator-performance-reuse-readout",
+      "display_name": "creator performance reuse readout",
+      "category": "Content / Creator / Social",
+      "mechanic": "evaluate creator assets for performance, learning, renewal, and paid reuse decisions",
+      "one_line_description": "Decide which creator assets to reuse or renew.",
+      "output": "creator performance readout",
+      "surfaces": [
+        "ugc-creator-workflow",
+        "social-content-automation",
+        "campaign-analytics-qa"
+      ],
+      "script": null
+    },
+    {
+      "name": "community-ambassador-loop-design",
+      "display_name": "community ambassador loop design",
+      "category": "Content / Creator / Social",
+      "mechanic": "design member, customer, or local advocate loops that produce referrals, proof, and content",
+      "one_line_description": "Build an ambassador or advocacy loop with proof generation.",
+      "output": "ambassador loop plan",
+      "surfaces": [
+        "ugc-creator-workflow",
+        "social-content-automation",
+        "local-storefront-growth"
+      ],
+      "script": null
+    },
+    {
+      "name": "social-listening-insight-brief",
+      "display_name": "social listening insight brief",
+      "category": "Content / Creator / Social",
+      "mechanic": "turn reviews, social posts, comments, and communities into message and campaign insights",
+      "one_line_description": "Extract marketing insights from social and community signals.",
+      "output": "social listening brief",
+      "surfaces": [
+        "customer-research-synthesis",
+        "social-content-automation"
+      ],
+      "script": null
+    },
+    {
+      "name": "seo-social-content-brief",
+      "display_name": "SEO social content brief",
+      "category": "Content / Creator / Social",
+      "mechanic": "blend search questions, social hooks, proof, and distribution into one content brief",
+      "one_line_description": "Create content briefs that work for search and social.",
+      "output": "SEO/social content brief",
+      "surfaces": [
+        "seo-content-briefing",
+        "social-content-automation"
+      ],
+      "script": null
+    },
+    {
+      "name": "voiceover-localization-workflow",
+      "display_name": "voiceover localization workflow",
+      "category": "Content / Creator / Social",
+      "mechanic": "plan translated or localized voice assets with tone, timing, proof, and review checks",
+      "one_line_description": "Localize voiceover assets for marketing use with review checks.",
+      "output": "voiceover localization workflow",
+      "surfaces": [
+        "video-ad-production",
+        "social-content-automation"
+      ],
+      "script": null
+    },
+    {
+      "name": "event-content-reuse-system",
+      "display_name": "event content reuse system",
+      "category": "Content / Creator / Social",
+      "mechanic": "turn event, webinar, or field moments into social, email, ads, and sales follow-up assets",
+      "one_line_description": "Repurpose event content into campaign assets and follow-up.",
+      "output": "event content reuse system",
+      "surfaces": [
+        "social-content-automation",
+        "lead-list-building",
+        "outbound-cadence-automation"
+      ],
+      "script": null
+    },
+    {
+      "name": "community-response-playbook",
+      "display_name": "community response playbook",
+      "category": "Content / Creator / Social",
+      "mechanic": "draft response patterns for comments, questions, objections, praise, and moderation risk",
+      "one_line_description": "Create social or community response guidance for repeat questions.",
+      "output": "community response playbook",
+      "surfaces": [
+        "social-content-automation",
+        "brand-governance-review"
+      ],
+      "script": null
+    },
+    {
+      "name": "icp-segment-trigger-map",
+      "display_name": "ICP segment trigger map",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "define fit, segment, trigger, disqualifier, pain, proof, and channel logic",
+      "one_line_description": "Map ideal segments and buying triggers for campaign action.",
+      "output": "ICP trigger map",
+      "surfaces": [
+        "customer-research-synthesis",
+        "lead-list-building"
+      ],
+      "script": null
+    },
+    {
+      "name": "account-list-sourcing-brief",
+      "display_name": "account list sourcing brief",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "turn segment rules into source selection, list criteria, exclusions, and evidence fields",
+      "one_line_description": "Specify how to build a qualified account list.",
+      "output": "account list sourcing brief",
+      "surfaces": [
+        "lead-list-building"
+      ],
+      "script": null
+    },
+    {
+      "name": "lead-list-prioritization-scorecard",
+      "display_name": "lead list prioritization scorecard",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "score leads by fit, trigger, intent, evidence strength, urgency, and route",
+      "one_line_description": "Prioritize leads before outreach using fit and intent evidence.",
+      "output": "lead scoring table and routing notes",
+      "surfaces": [
+        "lead-list-building",
+        "lead-enrichment-and-research"
+      ],
+      "script": "score_leads.py"
+    },
+    {
+      "name": "account-research-snapshot",
+      "display_name": "account research snapshot",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "summarize account context, role pain, trigger, proof match, objection, and first message angle",
+      "one_line_description": "Create concise account research for personalized outbound outreach.",
+      "output": "account research snapshot",
+      "surfaces": [
+        "lead-enrichment-and-research",
+        "customer-research-synthesis"
+      ],
+      "script": null
+    },
+    {
+      "name": "enrichment-field-contract",
+      "display_name": "enrichment field contract",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "define enrichment fields, source priority, freshness, usage, and fallback behavior",
+      "one_line_description": "Design enrichment that changes routing or messaging.",
+      "output": "enrichment field contract",
+      "surfaces": [
+        "lead-enrichment-and-research",
+        "audience-data-sync"
+      ],
+      "script": null
+    },
+    {
+      "name": "buying-signal-listener-spec",
+      "display_name": "buying signal listener spec",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "specify web, product, social, hiring, funding, content, and CRM signals that trigger action",
+      "one_line_description": "Detect buying intent from observable signals and route actions.",
+      "output": "signal listener spec",
+      "surfaces": [
+        "website-visitor-identification",
+        "lead-enrichment-and-research",
+        "audience-data-sync"
+      ],
+      "script": null
+    },
+    {
+      "name": "website-visitor-to-account-workflow",
+      "display_name": "website visitor to account workflow",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "map anonymous or known visits into account identity, intent, routing, and follow-up",
+      "one_line_description": "Turn website visits into account-level actions and follow-up.",
+      "output": "visitor-to-account workflow",
+      "surfaces": [
+        "website-visitor-identification"
+      ],
+      "script": null
+    },
+    {
+      "name": "intent-led-outbound-sequence",
+      "display_name": "intent-led outbound sequence",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "write outbound emails tied to a specific trigger, pain, proof, and reply route",
+      "one_line_description": "Create outbound sequences from intent signals and proof points.",
+      "output": "intent-led email sequence",
+      "surfaces": [
+        "outbound-cadence-automation",
+        "lead-enrichment-and-research"
+      ],
+      "script": null
+    },
+    {
+      "name": "linkedin-prospecting-cadence",
+      "display_name": "LinkedIn prospecting cadence",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "create connection, message, follow-up, and stop rules for LinkedIn prospecting",
+      "one_line_description": "Build LinkedIn outreach flows for target accounts.",
+      "output": "LinkedIn cadence",
+      "surfaces": [
+        "outbound-cadence-automation"
+      ],
+      "script": null
+    },
+    {
+      "name": "multichannel-prospecting-orchestration",
+      "display_name": "multichannel prospecting orchestration",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "coordinate email, LinkedIn, phone, retargeting, chat, and sales owner handoff",
+      "one_line_description": "Coordinate prospecting across channels with owner handoff rules.",
+      "output": "multichannel prospecting map",
+      "surfaces": [
+        "outbound-cadence-automation",
+        "marketing-ops-orchestration"
+      ],
+      "script": null
+    },
+    {
+      "name": "reply-intent-triage-rules",
+      "display_name": "reply intent triage rules",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "classify replies into interest, objection, referral, timing, unsubscribe, or support paths",
+      "one_line_description": "Route replies into the right next action.",
+      "output": "reply triage rules",
+      "surfaces": [
+        "inbound-chat-qualification",
+        "outbound-cadence-automation"
+      ],
+      "script": null
+    },
+    {
+      "name": "inbound-chat-qualification-flow",
+      "display_name": "inbound chat qualification flow",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "design chat questions, qualification logic, handoff moments, and fallback messages",
+      "one_line_description": "Qualify inbound chat without damaging handoff quality.",
+      "output": "chat qualification flow",
+      "surfaces": [
+        "inbound-chat-qualification"
+      ],
+      "script": null
+    },
+    {
+      "name": "demo-booking-friction-audit",
+      "display_name": "demo booking friction audit",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "inspect the path from ad, page, chat, form, or outreach to booked meeting",
+      "one_line_description": "Improve the conversion path into booked meetings.",
+      "output": "booking friction audit",
+      "surfaces": [
+        "inbound-chat-qualification",
+        "website-visitor-identification"
+      ],
+      "script": null
+    },
+    {
+      "name": "local-business-prospecting-route",
+      "display_name": "local business prospecting route",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "find local accounts or locations, prioritize routes, and prepare direct outreach",
+      "one_line_description": "Prioritize local prospects for direct outreach and route planning.",
+      "output": "local prospecting route",
+      "surfaces": [
+        "local-storefront-growth",
+        "lead-list-building"
+      ],
+      "script": null
+    },
+    {
+      "name": "event-lead-capture-followup",
+      "display_name": "event lead capture follow-up",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "turn event scans, meetings, booth notes, and field signals into segmented follow-up",
+      "one_line_description": "Convert event leads into follow-up and sales actions.",
+      "output": "event follow-up plan",
+      "surfaces": [
+        "lead-list-building",
+        "outbound-cadence-automation",
+        "marketing-ops-orchestration"
+      ],
+      "script": null
+    },
+    {
+      "name": "referral-partner-lead-loop",
+      "display_name": "referral partner lead loop",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "design partner, affiliate, referral, or ambassador lead flow with tracking and ownership",
+      "one_line_description": "Create referral or partner lead loops with tracking ownership.",
+      "output": "referral lead loop plan",
+      "surfaces": [
+        "lead-list-building",
+        "outbound-cadence-automation"
+      ],
+      "script": null
+    },
+    {
+      "name": "crm-handoff-qa",
+      "display_name": "CRM handoff QA",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "check campaign response, enrichment, owner assignment, next step, and reporting fields",
+      "one_line_description": "QA the handoff from marketing signal to CRM action.",
+      "output": "CRM handoff QA checklist",
+      "surfaces": [
+        "marketing-ops-orchestration",
+        "audience-data-sync"
+      ],
+      "script": null
+    },
+    {
+      "name": "sales-marketing-feedback-loop",
+      "display_name": "sales marketing feedback loop",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "convert sales replies, objections, disqualifiers, and wins into marketing list and message updates",
+      "one_line_description": "Use sales feedback to improve targeting and messaging.",
+      "output": "sales feedback loop",
+      "surfaces": [
+        "lead-list-building",
+        "customer-research-synthesis",
+        "outbound-cadence-automation"
+      ],
+      "script": null
+    },
+    {
+      "name": "agentic-list-building-workflow",
+      "display_name": "agentic list building workflow",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "scope an AI workflow for list criteria, evidence lookup, disqualification, routing actions, and review gates",
+      "one_line_description": "Design agent-assisted list building with evidence and routing controls.",
+      "output": "agentic list building workflow",
+      "surfaces": [
+        "ai-marketing-agent-workflow",
+        "lead-list-building"
+      ],
+      "script": null
+    },
+    {
+      "name": "audience-list-sync-readiness",
+      "display_name": "audience list sync readiness",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "align audience segments, list criteria, join keys, consent status, exclusions, destinations, and count checks",
+      "one_line_description": "Check whether a lead list is ready for audience activation.",
+      "output": "audience list sync readiness check",
+      "surfaces": [
+        "audience-data-sync",
+        "lead-list-building"
+      ],
+      "script": null
+    },
+    {
+      "name": "visitor-list-routing-plan",
+      "display_name": "visitor list routing plan",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "connect visit signals, list membership, intent thresholds, confidence, suppression, and follow-up routing",
+      "one_line_description": "Route website visitor signals into list and owner actions.",
+      "output": "visitor list routing plan",
+      "surfaces": [
+        "website-visitor-identification",
+        "lead-list-building"
+      ],
+      "script": null
+    },
+    {
+      "name": "chat-lead-routing-flow",
+      "display_name": "chat lead routing flow",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "turn chat qualification answers into list membership, owner routing, follow-up timing, and suppression-aware actions",
+      "one_line_description": "Move chat-qualified visitors into the right list and follow-up path.",
+      "output": "chat lead routing flow",
+      "surfaces": [
+        "inbound-chat-qualification",
+        "lead-list-building"
+      ],
+      "script": null
+    },
+    {
+      "name": "answer-led-list-hypothesis-panel",
+      "display_name": "answer-led list hypothesis panel",
+      "category": "Lead Intelligence / Conversion",
+      "mechanic": "use answer proof gaps and synthetic audience checks to refine list hypotheses, disqualifiers, and follow-up routes",
+      "one_line_description": "Use answer gaps to sharpen list hypotheses before outreach.",
+      "output": "answer-led list hypothesis panel",
+      "surfaces": [
+        "lead-list-building",
+        "answer-source-remediation",
+        "synthetic-audience-simulation"
+      ],
+      "script": null
+    },
+    {
+      "name": "synthetic-audience-panel-builder",
+      "display_name": "synthetic audience panel builder",
+      "category": "Research / Audience Simulation",
+      "mechanic": "define synthetic panel composition, assumptions, prompts, validation checks, and confidence limits",
+      "one_line_description": "Build a synthetic audience panel with validation limits.",
+      "output": "synthetic panel spec",
+      "surfaces": [
+        "synthetic-audience-simulation",
+        "customer-research-synthesis"
+      ],
+      "script": null
+    },
+    {
+      "name": "stakeholder-simulation-scenario-plan",
+      "display_name": "stakeholder simulation scenario plan",
+      "category": "Research / Audience Simulation",
+      "mechanic": "simulate stakeholder reactions to launches, messages, pricing, policy, or market events",
+      "one_line_description": "Plan stakeholder reaction simulations for launch or message decisions.",
+      "output": "simulation scenario plan",
+      "surfaces": [
+        "synthetic-audience-simulation",
+        "message-testing"
+      ],
+      "script": null
+    },
+    {
+      "name": "survey-instrument-builder",
+      "display_name": "survey instrument builder",
+      "category": "Research / Audience Simulation",
+      "mechanic": "write survey questions, screeners, branching, scales, and analysis fields around a decision",
+      "one_line_description": "Design surveys that answer a marketing decision.",
+      "output": "survey instrument and analysis plan",
+      "surfaces": [
+        "customer-research-synthesis",
+        "message-testing"
+      ],
+      "script": null
+    },
+    {
+      "name": "interview-guide-builder",
+      "display_name": "interview guide builder",
+      "category": "Research / Audience Simulation",
+      "mechanic": "create interview guides tied to buyer questions, objections, alternatives, and decision criteria",
+      "one_line_description": "Create customer, buyer, or stakeholder interview guides.",
+      "output": "interview guide",
+      "surfaces": [
+        "customer-research-synthesis"
+      ],
+      "script": null
+    },
+    {
+      "name": "interview-synthesis-matrix",
+      "display_name": "interview synthesis matrix",
+      "category": "Research / Audience Simulation",
+      "mechanic": "synthesize interviews into themes, quotes, objections, segments, confidence, and implications",
+      "one_line_description": "Turn interviews into a decision-ready matrix with confidence notes.",
+      "output": "interview synthesis matrix",
+      "surfaces": [
+        "customer-research-synthesis"
+      ],
+      "script": null
+    },
+    {
+      "name": "review-forum-mining-brief",
+      "display_name": "review forum mining brief",
+      "category": "Research / Audience Simulation",
+      "mechanic": "mine reviews, forums, communities, calls, and comments for pain, language, triggers, and objections",
+      "one_line_description": "Extract customer language from public or owned feedback.",
+      "output": "review mining brief",
+      "surfaces": [
+        "customer-research-synthesis",
+        "message-testing"
+      ],
+      "script": null
+    },
+    {
+      "name": "message-test-scorecard",
+      "display_name": "message test scorecard",
+      "category": "Research / Audience Simulation",
+      "mechanic": "score messages by clarity, relevance, proof, differentiation, risk, and next-action strength",
+      "one_line_description": "Evaluate competing messages before launch with explicit scoring.",
+      "output": "message test scorecard",
+      "surfaces": [
+        "message-testing",
+        "customer-research-synthesis"
+      ],
+      "script": null
+    },
+    {
+      "name": "positioning-claim-map",
+      "display_name": "positioning claim map",
+      "category": "Research / Audience Simulation",
+      "mechanic": "map competitors, alternatives, claims, proof, objections, and whitespace",
+      "one_line_description": "Clarify positioning against alternatives using claims and proof.",
+      "output": "positioning claim map",
+      "surfaces": [
+        "customer-research-synthesis"
+      ],
+      "script": null
+    },
+    {
+      "name": "market-segmentation-memo",
+      "display_name": "market segmentation memo",
+      "category": "Research / Audience Simulation",
+      "mechanic": "break a market into segments, jobs, channels, triggers, and acquisition implications",
+      "one_line_description": "Segment a market for marketing decisions and channel choices.",
+      "output": "segmentation memo",
+      "surfaces": [
+        "customer-research-synthesis",
+        "lead-list-building"
+      ],
+      "script": null
+    },
+    {
+      "name": "customer-journey-evidence-map",
+      "display_name": "customer journey evidence map",
+      "category": "Research / Audience Simulation",
+      "mechanic": "map stages, questions, objections, proof needs, channels, and conversion gaps",
+      "one_line_description": "Map the buyer journey from evidence and conversion gaps.",
+      "output": "journey evidence map",
+      "surfaces": [
+        "customer-research-synthesis",
+        "inbound-chat-qualification"
+      ],
+      "script": null
+    },
+    {
+      "name": "audience-intelligence-brief",
+      "display_name": "audience intelligence brief",
+      "category": "Research / Audience Simulation",
+      "mechanic": "turn audience data into motivations, segments, channels, triggers, and risks",
+      "one_line_description": "Convert audience data into campaign decisions and channel choices.",
+      "output": "audience intelligence brief",
+      "surfaces": [
+        "customer-research-synthesis",
+        "audience-data-sync"
+      ],
+      "script": null
+    },
+    {
+      "name": "research-decision-memo",
+      "display_name": "research decision memo",
+      "category": "Research / Audience Simulation",
+      "mechanic": "convert research findings into a recommendation, confidence level, rejected options, and next evidence",
+      "one_line_description": "Turn research into a decision with confidence and tradeoffs.",
+      "output": "research decision memo",
+      "surfaces": [
+        "customer-research-synthesis"
+      ],
+      "script": null
+    },
+    {
+      "name": "synthetic-enrichment-panel",
+      "display_name": "synthetic enrichment panel",
+      "category": "Research / Audience Simulation",
+      "mechanic": "test enrichment assumptions, personalization cues, confidence limits, and validation needs with synthetic panels",
+      "one_line_description": "Pressure-test enrichment assumptions before personalization reaches outreach or creative.",
+      "output": "synthetic enrichment panel",
+      "surfaces": [
+        "synthetic-audience-simulation",
+        "lead-enrichment-and-research",
+        "customer-research-synthesis"
+      ],
+      "script": null
+    },
+    {
+      "name": "local-market-research-brief",
+      "display_name": "local market research brief",
+      "category": "Research / Audience Simulation",
+      "mechanic": "turn local reviews, storefront signals, route context, and customer language into market insight",
+      "one_line_description": "Synthesize local market signals into campaign and route decisions.",
+      "output": "local market research brief",
+      "surfaces": [
+        "customer-research-synthesis",
+        "local-storefront-growth",
+        "lead-list-building"
+      ],
+      "script": null
+    },
+    {
+      "name": "campaign-tracking-plan",
+      "display_name": "campaign tracking plan",
+      "category": "Lifecycle / Ops / Analytics",
+      "mechanic": "define UTMs, events, properties, destinations, QA checks, and reporting owner",
+      "one_line_description": "Plan campaign tracking before launch with QA ownership.",
+      "output": "campaign tracking plan",
+      "surfaces": [
+        "campaign-analytics-qa",
+        "marketing-ops-orchestration"
+      ],
+      "script": null
+    },
+    {
+      "name": "attribution-diagnostic",
+      "display_name": "attribution diagnostic",
+      "category": "Lifecycle / Ops / Analytics",
+      "mechanic": "find attribution gaps across source capture, conversion events, identity, routing, and reporting",
+      "one_line_description": "Diagnose attribution before making performance decisions from campaign data.",
+      "output": "attribution diagnostic",
+      "surfaces": [
+        "campaign-analytics-qa"
+      ],
+      "script": null
+    },
+    {
+      "name": "audience-sync-contract",
+      "display_name": "audience sync contract",
+      "category": "Lifecycle / Ops / Analytics",
+      "mechanic": "define audience fields, refresh cadence, destinations, exclusions, and owner checks",
+      "one_line_description": "Move audiences between systems reliably with field contracts.",
+      "output": "audience sync contract",
+      "surfaces": [
+        "audience-data-sync"
+      ],
+      "script": null
+    },
+    {
+      "name": "warehouse-audience-activation-plan",
+      "display_name": "warehouse audience activation plan",
+      "category": "Lifecycle / Ops / Analytics",
+      "mechanic": "turn warehouse tables into campaign audiences with joins, QA, consent, and refresh rules",
+      "one_line_description": "Activate warehouse data for campaigns with QA rules.",
+      "output": "warehouse activation plan",
+      "surfaces": [
+        "audience-data-sync"
+      ],
+      "script": null
+    },
+    {
+      "name": "lifecycle-segmentation-map",
+      "display_name": "lifecycle segmentation map",
+      "category": "Lifecycle / Ops / Analytics",
+      "mechanic": "define lifecycle states, transitions, triggers, suppressions, and owner actions",
+      "one_line_description": "Create lifecycle audience segmentation with transitions and owner actions.",
+      "output": "lifecycle segmentation map",
+      "surfaces": [
+        "audience-data-sync",
+        "marketing-ops-orchestration"
+      ],
+      "script": null
+    },
+    {
+      "name": "whatsapp-sms-conversation-flow",
+      "display_name": "WhatsApp SMS conversation flow",
+      "category": "Lifecycle / Ops / Analytics",
+      "mechanic": "design compliant conversational flows for SMS, WhatsApp, or messaging channels",
+      "one_line_description": "Build messaging campaign flows with compliance and handoff checks.",
+      "output": "messaging conversation flow",
+      "surfaces": [
+        "marketing-ops-orchestration",
+        "outbound-cadence-automation",
+        "inbound-chat-qualification"
+      ],
+      "script": null
+    },
+    {
+      "name": "email-template-system",
+      "display_name": "email template system",
+      "category": "Lifecycle / Ops / Analytics",
+      "mechanic": "create reusable templates, dynamic fields, QA states, and version rules",
+      "one_line_description": "Create reusable campaign email templates with QA states.",
+      "output": "email template system",
+      "surfaces": [
+        "marketing-ops-orchestration",
+        "outbound-cadence-automation"
+      ],
+      "script": null
+    },
+    {
+      "name": "campaign-preflight-qa-checklist",
+      "display_name": "campaign preflight QA checklist",
+      "category": "Lifecycle / Ops / Analytics",
+      "mechanic": "check assets, audiences, approvals, tracking, consent, owner routing, and rollback before launch",
+      "one_line_description": "QA campaigns before they go live with rollback coverage.",
+      "output": "campaign preflight checklist",
+      "surfaces": [
+        "campaign-analytics-qa",
+        "marketing-ops-orchestration"
+      ],
+      "script": "build_campaign_qa.py"
+    },
+    {
+      "name": "experiment-readout",
+      "display_name": "experiment readout",
+      "category": "Lifecycle / Ops / Analytics",
+      "mechanic": "summarize experiment result, confidence, tradeoffs, decision, and next test",
+      "one_line_description": "Turn campaign or message tests into decisions.",
+      "output": "experiment readout",
+      "surfaces": [
+        "campaign-analytics-qa",
+        "message-testing"
+      ],
+      "script": null
+    },
+    {
+      "name": "retention-reactivation-loop",
+      "display_name": "retention reactivation loop",
+      "category": "Lifecycle / Ops / Analytics",
+      "mechanic": "design lifecycle campaigns for retention, winback, repeat purchase, or expansion",
+      "one_line_description": "Build retention or reactivation loops with lifecycle triggers.",
+      "output": "retention or reactivation loop",
+      "surfaces": [
+        "audience-data-sync",
+        "outbound-cadence-automation",
+        "marketing-ops-orchestration"
+      ],
+      "script": null
+    },
+    {
+      "name": "marketing-dashboard-spec",
+      "display_name": "marketing dashboard spec",
+      "category": "Lifecycle / Ops / Analytics",
+      "mechanic": "specify dashboard metrics, dimensions, data checks, thresholds, and operating decisions",
+      "one_line_description": "Design dashboards that drive marketing operating decisions.",
+      "output": "dashboard spec",
+      "surfaces": [
+        "campaign-analytics-qa",
+        "marketing-ops-orchestration"
+      ],
+      "script": null
+    },
+    {
+      "name": "consent-suppression-rollback-plan",
+      "display_name": "consent suppression rollback plan",
+      "category": "Lifecycle / Ops / Analytics",
+      "mechanic": "define consent checks, suppression rules, privacy review, rollback path, and incident owner",
+      "one_line_description": "Protect campaign operations with consent and rollback rules.",
+      "output": "consent and rollback plan",
+      "surfaces": [
+        "marketing-ops-orchestration",
+        "brand-governance-review"
+      ],
+      "script": null
+    },
+    {
+      "name": "marketing-agent-workflow-spec",
+      "display_name": "marketing agent workflow spec",
+      "category": "Marketing Agents / Governance",
+      "mechanic": "scope a bounded marketing agent by job, inputs, tools, review gates, and final artifact",
+      "one_line_description": "Specify an AI agent workflow for a bounded marketing job.",
+      "output": "agent workflow spec",
+      "surfaces": [
+        "ai-marketing-agent-workflow",
+        "marketing-ops-orchestration"
+      ],
+      "script": null
+    },
+    {
+      "name": "agentic-seo-briefing-workflow",
+      "display_name": "agentic SEO briefing workflow",
+      "category": "Marketing Agents / Governance",
+      "mechanic": "scope an AI workflow for target queries, proof lookup, brief drafting, schema actions, review gates, and publish handoff",
+      "one_line_description": "Design agent-assisted SEO and answer-ready content briefing.",
+      "output": "agentic SEO briefing workflow",
+      "surfaces": [
+        "ai-marketing-agent-workflow",
+        "seo-content-briefing"
+      ],
+      "script": null
+    },
+    {
+      "name": "tool-orchestration-map",
+      "display_name": "tool orchestration map",
+      "category": "Marketing Agents / Governance",
+      "mechanic": "map model calls, tools, data access, human handoffs, and fallback paths",
+      "one_line_description": "Plan tool use inside marketing workflows with fallback paths.",
+      "output": "tool orchestration map",
+      "surfaces": [
+        "ai-marketing-agent-workflow"
+      ],
+      "script": null
+    },
+    {
+      "name": "human-approval-ladder",
+      "display_name": "human approval ladder",
+      "category": "Marketing Agents / Governance",
+      "mechanic": "define what AI can draft, decide, route, or escalate based on risk",
+      "one_line_description": "Set approval rules for AI-assisted marketing by risk level.",
+      "output": "approval ladder",
+      "surfaces": [
+        "ai-marketing-agent-workflow",
+        "brand-governance-review"
+      ],
+      "script": null
+    },
+    {
+      "name": "marketing-output-eval-harness",
+      "display_name": "marketing output eval harness",
+      "category": "Marketing Agents / Governance",
+      "mechanic": "create evals for factuality, claim support, brand fit, usefulness, and operational reliability",
+      "one_line_description": "Evaluate AI-generated marketing output with measurable criteria.",
+      "output": "marketing eval harness",
+      "surfaces": [
+        "ai-marketing-agent-workflow",
+        "campaign-analytics-qa"
+      ],
+      "script": null
+    },
+    {
+      "name": "brand-voice-memory",
+      "display_name": "brand voice memory",
+      "category": "Marketing Agents / Governance",
+      "mechanic": "distill approved voice, claims, examples, banned patterns, and review notes into reusable memory",
+      "one_line_description": "Build reusable brand voice guidance for AI workflows.",
+      "output": "brand voice memory",
+      "surfaces": [
+        "brand-governance-review",
+        "social-content-automation"
+      ],
+      "script": null
+    },
+    {
+      "name": "prompt-library-maintenance",
+      "display_name": "prompt library maintenance",
+      "category": "Marketing Agents / Governance",
+      "mechanic": "maintain prompt patterns, examples, failures, variants, owners, and version notes",
+      "one_line_description": "Maintain prompt libraries for marketing workflows with version notes.",
+      "output": "prompt library maintenance plan",
+      "surfaces": [
+        "ai-marketing-agent-workflow"
+      ],
+      "script": null
+    },
+    {
+      "name": "claims-hallucination-review",
+      "display_name": "claims hallucination review",
+      "category": "Marketing Agents / Governance",
+      "mechanic": "review AI-generated marketing for unsupported claims, factual drift, missing caveats, and legal risk",
+      "one_line_description": "Review AI marketing for unsupported claims and hallucinations.",
+      "output": "claims review checklist",
+      "surfaces": [
+        "brand-governance-review",
+        "answer-source-remediation",
+        "ai-marketing-agent-workflow"
+      ],
+      "script": null
+    },
+    {
+      "name": "ai-workflow-telemetry-plan",
+      "display_name": "AI workflow telemetry plan",
+      "category": "Marketing Agents / Governance",
+      "mechanic": "define quality, throughput, review, acceptance, rework, and business-impact telemetry",
+      "one_line_description": "Measure AI workflow performance beyond output volume.",
+      "output": "AI workflow telemetry plan",
+      "surfaces": [
+        "ai-marketing-agent-workflow",
+        "campaign-analytics-qa"
+      ],
+      "script": null
+    },
+    {
+      "name": "internal-knowledge-activation",
+      "display_name": "internal knowledge activation",
+      "category": "Marketing Agents / Governance",
+      "mechanic": "turn approved docs, calls, data, and research into safe inputs for AI-assisted marketing",
+      "one_line_description": "Activate internal knowledge for marketing AI workflows.",
+      "output": "knowledge activation plan",
+      "surfaces": [
+        "ai-marketing-agent-workflow",
+        "customer-research-synthesis"
+      ],
+      "script": null
+    },
+    {
+      "name": "automation-risk-register",
+      "display_name": "automation risk register",
+      "category": "Marketing Agents / Governance",
+      "mechanic": "identify automation risks, mitigations, owners, monitoring, escalation, and rollback",
+      "one_line_description": "Manage risk in marketing automation and AI workflows.",
+      "output": "automation risk register",
+      "surfaces": [
+        "ai-marketing-agent-workflow",
+        "brand-governance-review",
+        "marketing-ops-orchestration"
+      ],
+      "script": null
+    }
+  ]
+}

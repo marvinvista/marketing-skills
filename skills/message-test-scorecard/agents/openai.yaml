@@ -1,0 +1,4 @@
+interface:
+  display_name: "message test scorecard"
+  short_description: "Evaluate competing messages before launch with explicit scoring"
+  default_prompt: "Use $message-test-scorecard to produce message test scorecard."

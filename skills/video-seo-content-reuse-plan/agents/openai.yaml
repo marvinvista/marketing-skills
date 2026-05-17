@@ -1,0 +1,4 @@
+interface:
+  display_name: "video SEO content reuse plan"
+  short_description: "Repurpose video production into SEO and social content assets"
+  default_prompt: "Use $video-seo-content-reuse-plan to produce video SEO reuse plan."

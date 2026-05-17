@@ -1,0 +1,4 @@
+interface:
+  display_name: "agentic answer ops workflow"
+  short_description: "Design agent-assisted operations for AI answer visibility and remediation"
+  default_prompt: "Use $agentic-answer-ops-workflow to produce agentic answer ops workflow."

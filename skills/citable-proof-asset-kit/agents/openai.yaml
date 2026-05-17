@@ -1,0 +1,4 @@
+interface:
+  display_name: "citable proof asset kit"
+  short_description: "Create citable proof assets for AI answers and search surfaces"
+  default_prompt: "Use $citable-proof-asset-kit to produce proof kit and publishing checklist."

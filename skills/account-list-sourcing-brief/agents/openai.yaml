@@ -1,0 +1,4 @@
+interface:
+  display_name: "account list sourcing brief"
+  short_description: "Specify how to build a qualified account list"
+  default_prompt: "Use $account-list-sourcing-brief to produce account list sourcing brief."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "product image QA brief"
+  short_description: "Create and QA product imagery for commerce or ads"
+  default_prompt: "Use $product-image-qa-brief to produce product image brief and QA checklist."

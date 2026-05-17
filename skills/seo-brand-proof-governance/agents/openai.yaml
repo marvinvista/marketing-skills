@@ -1,0 +1,4 @@
+interface:
+  display_name: "SEO brand proof governance"
+  short_description: "Review SEO and AI-search briefs for proof, brand, and claim readiness"
+  default_prompt: "Use $seo-brand-proof-governance to produce SEO proof governance brief."

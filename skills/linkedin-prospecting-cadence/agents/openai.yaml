@@ -1,0 +1,4 @@
+interface:
+  display_name: "LinkedIn prospecting cadence"
+  short_description: "Build LinkedIn outreach flows for target accounts"
+  default_prompt: "Use $linkedin-prospecting-cadence to produce LinkedIn cadence."

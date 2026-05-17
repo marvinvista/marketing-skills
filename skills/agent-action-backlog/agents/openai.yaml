@@ -1,0 +1,4 @@
+interface:
+  display_name: "agent action backlog"
+  short_description: "Prioritize actions that improve agent discovery and answer inclusion"
+  default_prompt: "Use $agent-action-backlog to produce ranked agent-discovery action backlog."

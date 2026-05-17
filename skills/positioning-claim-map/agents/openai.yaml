@@ -1,0 +1,4 @@
+interface:
+  display_name: "positioning claim map"
+  short_description: "Clarify positioning against alternatives using claims and proof"
+  default_prompt: "Use $positioning-claim-map to produce positioning claim map."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "automation risk register"
+  short_description: "Manage risk in marketing automation and AI workflows"
+  default_prompt: "Use $automation-risk-register to produce automation risk register."

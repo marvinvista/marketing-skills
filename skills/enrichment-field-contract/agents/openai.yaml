@@ -1,0 +1,4 @@
+interface:
+  display_name: "enrichment field contract"
+  short_description: "Design enrichment that changes routing or messaging"
+  default_prompt: "Use $enrichment-field-contract to produce enrichment field contract."

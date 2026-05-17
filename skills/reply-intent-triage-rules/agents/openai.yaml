@@ -1,0 +1,4 @@
+interface:
+  display_name: "reply intent triage rules"
+  short_description: "Route replies into the right next action"
+  default_prompt: "Use $reply-intent-triage-rules to produce reply triage rules."

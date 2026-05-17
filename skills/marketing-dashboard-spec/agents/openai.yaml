@@ -1,0 +1,4 @@
+interface:
+  display_name: "marketing dashboard spec"
+  short_description: "Design dashboards that drive marketing operating decisions"
+  default_prompt: "Use $marketing-dashboard-spec to produce dashboard spec."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "website visitor to account workflow"
+  short_description: "Turn website visits into account-level actions and follow-up"
+  default_prompt: "Use $website-visitor-to-account-workflow to produce visitor-to-account workflow."

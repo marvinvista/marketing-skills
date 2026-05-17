@@ -1,0 +1,7 @@
+# Local retrieval snapshots
+retrieval_*.html
+retrieval_*.js
+
+# Python
+__pycache__/
+.DS_Store

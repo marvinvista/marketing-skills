@@ -1,0 +1,4 @@
+interface:
+  display_name: "catalog ad feed plan"
+  short_description: "Build repeatable catalog creative from product data"
+  default_prompt: "Use $catalog-ad-feed-plan to produce catalog creative feed plan."

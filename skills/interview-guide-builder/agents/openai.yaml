@@ -1,0 +1,4 @@
+interface:
+  display_name: "interview guide builder"
+  short_description: "Create customer, buyer, or stakeholder interview guides"
+  default_prompt: "Use $interview-guide-builder to produce interview guide."

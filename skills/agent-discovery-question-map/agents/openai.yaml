@@ -1,0 +1,4 @@
+interface:
+  display_name: "agent discovery question map"
+  short_description: "Turn buyer questions into a prioritized answer-engine inspection map"
+  default_prompt: "Use $agent-discovery-question-map to produce question map, prompt set, and proof inventory."

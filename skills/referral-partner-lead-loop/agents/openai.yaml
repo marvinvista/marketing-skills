@@ -1,0 +1,4 @@
+interface:
+  display_name: "referral partner lead loop"
+  short_description: "Create referral or partner lead loops with tracking ownership"
+  default_prompt: "Use $referral-partner-lead-loop to produce referral lead loop plan."

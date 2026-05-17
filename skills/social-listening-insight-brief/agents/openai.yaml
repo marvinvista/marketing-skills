@@ -1,0 +1,4 @@
+interface:
+  display_name: "social listening insight brief"
+  short_description: "Extract marketing insights from social and community signals"
+  default_prompt: "Use $social-listening-insight-brief to produce social listening brief."

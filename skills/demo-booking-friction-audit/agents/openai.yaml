@@ -1,0 +1,4 @@
+interface:
+  display_name: "demo booking friction audit"
+  short_description: "Improve the conversion path into booked meetings"
+  default_prompt: "Use $demo-booking-friction-audit to produce booking friction audit."

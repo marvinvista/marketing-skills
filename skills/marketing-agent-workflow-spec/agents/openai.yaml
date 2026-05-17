@@ -1,0 +1,4 @@
+interface:
+  display_name: "marketing agent workflow spec"
+  short_description: "Specify an AI agent workflow for a bounded marketing job"
+  default_prompt: "Use $marketing-agent-workflow-spec to produce agent workflow spec."

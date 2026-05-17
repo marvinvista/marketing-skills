@@ -1,0 +1,4 @@
+interface:
+  display_name: "inbound chat qualification flow"
+  short_description: "Qualify inbound chat without damaging handoff quality"
+  default_prompt: "Use $inbound-chat-qualification-flow to produce chat qualification flow."

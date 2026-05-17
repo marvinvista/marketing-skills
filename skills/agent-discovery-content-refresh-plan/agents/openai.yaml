@@ -1,0 +1,4 @@
+interface:
+  display_name: "agent discovery content refresh plan"
+  short_description: "Plan content refreshes that improve AI discovery"
+  default_prompt: "Use $agent-discovery-content-refresh-plan to produce refresh plan and CMS handoff."

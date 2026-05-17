@@ -1,0 +1,4 @@
+interface:
+  display_name: "warehouse audience activation plan"
+  short_description: "Activate warehouse data for campaigns with QA rules"
+  default_prompt: "Use $warehouse-audience-activation-plan to produce warehouse activation plan."

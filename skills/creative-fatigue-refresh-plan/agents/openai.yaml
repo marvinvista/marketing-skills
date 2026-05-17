@@ -1,0 +1,4 @@
+interface:
+  display_name: "creative fatigue refresh plan"
+  short_description: "Refresh fatigued creative without resetting the learning loop"
+  default_prompt: "Use $creative-fatigue-refresh-plan to produce creative refresh plan."

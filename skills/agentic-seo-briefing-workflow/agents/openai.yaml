@@ -1,0 +1,4 @@
+interface:
+  display_name: "agentic SEO briefing workflow"
+  short_description: "Design agent-assisted SEO and answer-ready content briefing"
+  default_prompt: "Use $agentic-seo-briefing-workflow to produce agentic SEO briefing workflow."

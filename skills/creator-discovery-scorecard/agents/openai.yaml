@@ -1,0 +1,4 @@
+interface:
+  display_name: "creator discovery scorecard"
+  short_description: "Find and rank creators or influencers for a campaign"
+  default_prompt: "Use $creator-discovery-scorecard to produce creator scorecard."

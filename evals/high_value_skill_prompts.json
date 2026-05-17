@@ -1,0 +1,77 @@
+[
+  {
+    "skill": "prompt-rank-monitor",
+    "surface": "AI Search / Agent Discovery",
+    "prompt": "Use $prompt-rank-monitor for a fictional B2B analytics product. Build a concise prompt-rank monitoring artifact for three buyer questions across ChatGPT and Perplexity. Use sample observations, mark assumptions, include QA checks, failure modes, proof metric, and next action. Do not mention source identities or private evidence.",
+    "must_include": [
+      "decision supported",
+      "required inputs",
+      "prompt-rank table",
+      "observed versus inferred separation",
+      "QA checks",
+      "failure modes",
+      "proof metric",
+      "next action"
+    ]
+  },
+  {
+    "skill": "ad-variant-matrix-builder",
+    "surface": "Creative / Ads / Assets",
+    "prompt": "Use $ad-variant-matrix-builder for a fictional workflow automation product targeting RevOps leaders. Create a controlled ad variant matrix across hooks, proof, formats, and CTAs. Keep one primary variable testable per row and include QA checks, failure modes, proof metric, and next action.",
+    "must_include": [
+      "decision supported",
+      "variant matrix",
+      "hypothesis per variant",
+      "claim and proof control",
+      "QA checks",
+      "failure modes",
+      "proof metric",
+      "next action"
+    ]
+  },
+  {
+    "skill": "lead-list-prioritization-scorecard",
+    "surface": "Lead Intelligence / Conversion",
+    "prompt": "Use $lead-list-prioritization-scorecard for a fictional B2B data product. Score six sample accounts by fit, intent, evidence strength, urgency, and route. Include disqualifiers, owner handoff, QA checks, failure modes, proof metric, and next action.",
+    "must_include": [
+      "decision supported",
+      "lead scoring table",
+      "fit and intent evidence",
+      "routing notes",
+      "QA checks",
+      "failure modes",
+      "proof metric",
+      "next action"
+    ]
+  },
+  {
+    "skill": "campaign-preflight-qa-checklist",
+    "surface": "Lifecycle / Ops / Analytics",
+    "prompt": "Use $campaign-preflight-qa-checklist for a fictional product launch campaign across paid, email, and chat. Produce a launch QA checklist with owners, rollback, consent, tracking, asset approval, failure modes, proof metric, and next action.",
+    "must_include": [
+      "decision supported",
+      "preflight checklist",
+      "owners",
+      "consent and suppression",
+      "tracking",
+      "rollback",
+      "failure modes",
+      "next action"
+    ]
+  },
+  {
+    "skill": "marketing-agent-workflow-spec",
+    "surface": "Marketing Agents / Governance",
+    "prompt": "Use $marketing-agent-workflow-spec to specify a bounded AI marketing agent that drafts campaign briefs from approved inputs. Define allowed tools, human approval gates, telemetry, non-actions, QA checks, failure modes, proof metric, and next action.",
+    "must_include": [
+      "decision supported",
+      "bounded job",
+      "allowed tools",
+      "approval gates",
+      "non-actions",
+      "telemetry",
+      "QA checks",
+      "next action"
+    ]
+  }
+]

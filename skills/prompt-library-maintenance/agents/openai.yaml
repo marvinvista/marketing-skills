@@ -1,0 +1,4 @@
+interface:
+  display_name: "prompt library maintenance"
+  short_description: "Maintain prompt libraries for marketing workflows with version notes"
+  default_prompt: "Use $prompt-library-maintenance to produce prompt library maintenance plan."

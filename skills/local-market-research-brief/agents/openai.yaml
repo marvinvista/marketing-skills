@@ -1,0 +1,4 @@
+interface:
+  display_name: "local market research brief"
+  short_description: "Synthesize local market signals into campaign and route decisions"
+  default_prompt: "Use $local-market-research-brief to produce local market research brief."

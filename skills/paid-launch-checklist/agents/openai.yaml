@@ -1,0 +1,4 @@
+interface:
+  display_name: "paid launch checklist"
+  short_description: "Prepare a paid campaign for launch with QA coverage"
+  default_prompt: "Use $paid-launch-checklist to produce paid launch checklist."

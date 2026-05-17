@@ -1,0 +1,4 @@
+interface:
+  display_name: "internal knowledge activation"
+  short_description: "Activate internal knowledge for marketing AI workflows"
+  default_prompt: "Use $internal-knowledge-activation to produce knowledge activation plan."

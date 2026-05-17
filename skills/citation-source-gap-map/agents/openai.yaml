@@ -1,0 +1,4 @@
+interface:
+  display_name: "citation source gap map"
+  short_description: "Find the proof assets answer engines cite, miss, or distort"
+  default_prompt: "Use $citation-source-gap-map to produce citation gap map and proof backlog."

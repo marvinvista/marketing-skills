@@ -1,0 +1,4 @@
+interface:
+  display_name: "buying signal listener spec"
+  short_description: "Detect buying intent from observable signals and route actions"
+  default_prompt: "Use $buying-signal-listener-spec to produce signal listener spec."

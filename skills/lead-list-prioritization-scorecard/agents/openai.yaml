@@ -1,0 +1,4 @@
+interface:
+  display_name: "lead list prioritization scorecard"
+  short_description: "Prioritize leads before outreach using fit and intent evidence"
+  default_prompt: "Use $lead-list-prioritization-scorecard to produce lead scoring table and routing notes."

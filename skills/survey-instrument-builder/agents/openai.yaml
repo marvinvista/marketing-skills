@@ -1,0 +1,4 @@
+interface:
+  display_name: "survey instrument builder"
+  short_description: "Design surveys that answer a marketing decision"
+  default_prompt: "Use $survey-instrument-builder to produce survey instrument and analysis plan."

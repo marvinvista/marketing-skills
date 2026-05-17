@@ -1,0 +1,4 @@
+interface:
+  display_name: "competitor ad teardown"
+  short_description: "Analyze competitor ads for testable creative opportunities"
+  default_prompt: "Use $competitor-ad-teardown to produce competitor ad teardown."

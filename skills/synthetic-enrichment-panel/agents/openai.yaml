@@ -1,0 +1,4 @@
+interface:
+  display_name: "synthetic enrichment panel"
+  short_description: "Pressure-test enrichment assumptions before personalization reaches outreach or creative"
+  default_prompt: "Use $synthetic-enrichment-panel to produce synthetic enrichment panel."

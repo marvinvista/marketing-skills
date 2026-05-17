@@ -1,0 +1,4 @@
+interface:
+  display_name: "interview synthesis matrix"
+  short_description: "Turn interviews into a decision-ready matrix with confidence notes"
+  default_prompt: "Use $interview-synthesis-matrix to produce interview synthesis matrix."

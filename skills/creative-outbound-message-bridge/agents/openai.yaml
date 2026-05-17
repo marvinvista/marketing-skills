@@ -1,0 +1,4 @@
+interface:
+  display_name: "creative outbound message bridge"
+  short_description: "Adapt winning creative angles into outbound sequences"
+  default_prompt: "Use $creative-outbound-message-bridge to produce creative-to-outbound message bridge."

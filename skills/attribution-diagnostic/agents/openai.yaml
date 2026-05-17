@@ -1,0 +1,4 @@
+interface:
+  display_name: "attribution diagnostic"
+  short_description: "Diagnose attribution before making performance decisions from campaign data"
+  default_prompt: "Use $attribution-diagnostic to produce attribution diagnostic."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "tool orchestration map"
+  short_description: "Plan tool use inside marketing workflows with fallback paths"
+  default_prompt: "Use $tool-orchestration-map to produce tool orchestration map."

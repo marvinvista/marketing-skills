@@ -1,0 +1,4 @@
+interface:
+  display_name: "experiment readout"
+  short_description: "Turn campaign or message tests into decisions"
+  default_prompt: "Use $experiment-readout to produce experiment readout."

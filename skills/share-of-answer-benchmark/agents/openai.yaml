@@ -1,0 +1,4 @@
+interface:
+  display_name: "share of answer benchmark"
+  short_description: "Benchmark answer share against competitors and alternatives"
+  default_prompt: "Use $share-of-answer-benchmark to produce share-of-answer report."

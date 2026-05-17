@@ -1,0 +1,4 @@
+interface:
+  display_name: "multimodal asset assembly brief"
+  short_description: "Plan multimodal ad assets across formats and review states"
+  default_prompt: "Use $multimodal-asset-assembly-brief to produce multimodal assembly brief."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "marketing output eval harness"
+  short_description: "Evaluate AI-generated marketing output with measurable criteria"
+  default_prompt: "Use $marketing-output-eval-harness to produce marketing eval harness."

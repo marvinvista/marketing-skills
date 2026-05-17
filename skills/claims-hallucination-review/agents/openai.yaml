@@ -1,0 +1,4 @@
+interface:
+  display_name: "claims hallucination review"
+  short_description: "Review AI marketing for unsupported claims and hallucinations"
+  default_prompt: "Use $claims-hallucination-review to produce claims review checklist."

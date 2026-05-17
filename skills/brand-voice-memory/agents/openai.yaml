@@ -1,0 +1,4 @@
+interface:
+  display_name: "brand voice memory"
+  short_description: "Build reusable brand voice guidance for AI workflows"
+  default_prompt: "Use $brand-voice-memory to produce brand voice memory."

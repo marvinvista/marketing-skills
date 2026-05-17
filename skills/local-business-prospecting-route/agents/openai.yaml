@@ -1,0 +1,4 @@
+interface:
+  display_name: "local business prospecting route"
+  short_description: "Prioritize local prospects for direct outreach and route planning"
+  default_prompt: "Use $local-business-prospecting-route to produce local prospecting route."

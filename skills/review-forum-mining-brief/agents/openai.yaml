@@ -1,0 +1,4 @@
+interface:
+  display_name: "review forum mining brief"
+  short_description: "Extract customer language from public or owned feedback"
+  default_prompt: "Use $review-forum-mining-brief to produce review mining brief."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "retention reactivation loop"
+  short_description: "Build retention or reactivation loops with lifecycle triggers"
+  default_prompt: "Use $retention-reactivation-loop to produce retention or reactivation loop."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "multilingual creative localization"
+  short_description: "Localize campaign creative without losing meaning or compliance"
+  default_prompt: "Use $multilingual-creative-localization to produce localized creative plan."

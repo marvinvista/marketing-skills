@@ -1,0 +1,4 @@
+interface:
+  display_name: "creative agent production workflow"
+  short_description: "Specify agent-assisted creative production with review and handoff gates"
+  default_prompt: "Use $creative-agent-production-workflow to produce creative agent production workflow."

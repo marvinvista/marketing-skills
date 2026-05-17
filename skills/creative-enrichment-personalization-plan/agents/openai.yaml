@@ -1,0 +1,4 @@
+interface:
+  display_name: "creative enrichment personalization plan"
+  short_description: "Use enrichment fields to personalize creative without overreaching"
+  default_prompt: "Use $creative-enrichment-personalization-plan to produce creative personalization plan."

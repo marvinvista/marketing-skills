@@ -1,0 +1,4 @@
+interface:
+  display_name: "offer angle mining"
+  short_description: "Find the strongest campaign angles before writing creative"
+  default_prompt: "Use $offer-angle-mining to produce offer angle map."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "generative search weekly ops report"
+  short_description: "Create a recurring operating report for AI visibility work"
+  default_prompt: "Use $generative-search-weekly-ops-report to produce weekly ops report with actions."

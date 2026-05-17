@@ -1,0 +1,4 @@
+interface:
+  display_name: "podcast audio ad read guide"
+  short_description: "Create podcast or audio ad copy and read guidance"
+  default_prompt: "Use $podcast-audio-ad-read-guide to produce audio ad script and read guide."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "visitor list routing plan"
+  short_description: "Route website visitor signals into list and owner actions"
+  default_prompt: "Use $visitor-list-routing-plan to produce visitor list routing plan."

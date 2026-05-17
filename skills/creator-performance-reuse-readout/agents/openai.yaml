@@ -1,0 +1,4 @@
+interface:
+  display_name: "creator performance reuse readout"
+  short_description: "Decide which creator assets to reuse or renew"
+  default_prompt: "Use $creator-performance-reuse-readout to produce creator performance readout."

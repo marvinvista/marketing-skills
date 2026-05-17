@@ -1,0 +1,4 @@
+interface:
+  display_name: "ad variant matrix builder"
+  short_description: "Create structured ad variants for controlled creative testing"
+  default_prompt: "Use $ad-variant-matrix-builder to produce creative variant matrix."

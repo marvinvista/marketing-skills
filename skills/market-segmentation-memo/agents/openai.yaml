@@ -1,0 +1,4 @@
+interface:
+  display_name: "market segmentation memo"
+  short_description: "Segment a market for marketing decisions and channel choices"
+  default_prompt: "Use $market-segmentation-memo to produce segmentation memo."

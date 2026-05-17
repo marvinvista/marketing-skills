@@ -1,0 +1,4 @@
+interface:
+  display_name: "consent suppression rollback plan"
+  short_description: "Protect campaign operations with consent and rollback rules"
+  default_prompt: "Use $consent-suppression-rollback-plan to produce consent and rollback plan."

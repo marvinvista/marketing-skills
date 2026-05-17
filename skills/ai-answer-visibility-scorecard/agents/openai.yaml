@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI answer visibility scorecard"
+  short_description: "Audit how a brand, product, or category appears in AI answers"
+  default_prompt: "Use $ai-answer-visibility-scorecard to produce visibility scorecard with remediation backlog."

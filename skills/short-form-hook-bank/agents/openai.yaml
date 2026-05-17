@@ -1,0 +1,4 @@
+interface:
+  display_name: "short-form hook bank"
+  short_description: "Build a hook bank for short-form creative testing"
+  default_prompt: "Use $short-form-hook-bank to produce hook bank and test notes."

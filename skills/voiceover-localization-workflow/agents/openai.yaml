@@ -1,0 +1,4 @@
+interface:
+  display_name: "voiceover localization workflow"
+  short_description: "Localize voiceover assets for marketing use with review checks"
+  default_prompt: "Use $voiceover-localization-workflow to produce voiceover localization workflow."

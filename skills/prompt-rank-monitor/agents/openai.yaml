@@ -1,0 +1,4 @@
+interface:
+  display_name: "prompt rank monitor"
+  short_description: "Track answer-engine rank and mention quality across a repeatable prompt set"
+  default_prompt: "Use $prompt-rank-monitor to produce prompt-rank table and monitoring cadence."
