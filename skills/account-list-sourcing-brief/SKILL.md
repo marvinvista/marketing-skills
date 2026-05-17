@@ -1,6 +1,6 @@
 ---
 name: account-list-sourcing-brief
-description: Use when a marketer or go-to-market operator needs account list sourcing brief for Lead Intelligence / Conversion work involving Lead list building, especially when the task must turn segment rules into source selection, list criteria, exclusions, and evidence fields.
+description: Use when you need account list sourcing brief to turn segment rules into source selection, list criteria, exclusions, and evidence fields.
 ---
 
 # account list sourcing brief
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs account list sou
 
 - Produce account list sourcing brief.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: segment rule, list source, inclusion criterion, exclusion.
+- Use the artifact to decide: Which records qualify for action now.
+- Do not mark ready until: Every accepted record has fit, trigger, evidence, and a route.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs account list sou
 ## Output Contract
 
 Return account list sourcing brief. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not account list sourcing brief, the main decision is outside lead-list-building, or the user only needs broad strategy.
 
 ## Guardrails
 

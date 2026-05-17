@@ -1,6 +1,6 @@
 ---
 name: citation-source-gap-map
-description: Use when a marketer or go-to-market operator needs citation gap map and proof backlog for AI Search / Agent Discovery work involving Answer source remediation, SEO content briefing, especially when the task must identify cited and uncited proof assets, pages, listings, and third-party references.
+description: Use when you need citation gap map and proof backlog to identify cited and uncited proof assets, pages, listings, and third-party references.
 ---
 
 # citation source gap map
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs citation gap map
 
 - Produce citation gap map and proof backlog.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: answer claim, cited asset, missing proof, stale proof.
+- Use the artifact to decide: Which proof, page, listing, or data fix ships first.
+- Do not mark ready until: Every remediation item ties to a specific answer gap.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs citation gap map
 ## Output Contract
 
 Return citation gap map and proof backlog. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not citation gap map and proof backlog, the main decision is outside answer-source-remediation, seo-content-briefing, or the user only needs broad strategy.
 
 ## Guardrails
 

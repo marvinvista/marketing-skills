@@ -1,6 +1,6 @@
 ---
 name: survey-instrument-builder
-description: Use when a marketer or go-to-market operator needs survey instrument and analysis plan for Research / Audience Simulation work involving Customer research synthesis, Message testing, especially when the task must write survey questions, screeners, branching, scales, and analysis fields around a decision.
+description: Use when you need survey instrument and analysis plan to write survey questions, screeners, branching, scales, and analysis fields around a decision.
 ---
 
 # survey instrument builder
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs survey instrumen
 
 - Produce survey instrument and analysis plan.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: decision, respondent criteria, screener, question.
+- Use the artifact to decide: Which message, segment, or channel assumption changes.
+- Do not mark ready until: Observed evidence, synthesis, and recommendation are labeled separately.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs survey instrumen
 ## Output Contract
 
 Return survey instrument and analysis plan. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not survey instrument and analysis plan, the main decision is outside customer-research-synthesis, message-testing, or the user only needs broad strategy.
 
 ## Guardrails
 

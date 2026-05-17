@@ -1,6 +1,6 @@
 ---
 name: ad-variant-matrix-builder
-description: Use when a marketer or go-to-market operator needs creative variant matrix for Creative / Ads / Assets work involving Ad creative generation, Message testing, especially when the task must generate a controlled variant matrix across hooks, angles, proof, CTAs, and formats.
+description: Use when you need creative variant matrix to generate a controlled variant matrix across hooks, angles, proof, CTAs, and formats.
 ---
 
 # ad variant matrix builder
@@ -10,6 +10,12 @@ description: Use when a marketer or go-to-market operator needs creative variant
 - Produce creative variant matrix.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
 - Run `scripts/build_variant_matrix.py` when the user provides structured inputs for the repeatable table, scorecard, or checklist.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: hook, angle, proof, format.
+- Use the artifact to decide: Which variable changes in the next creative test.
+- Do not mark ready until: Each creative variant changes one declared variable or is marked exploratory.
 
 ## Workflow
 
@@ -21,6 +27,10 @@ description: Use when a marketer or go-to-market operator needs creative variant
 ## Output Contract
 
 Return creative variant matrix. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not creative variant matrix, the main decision is outside ad-creative-generation, message-testing, or the user only needs broad strategy.
 
 ## Guardrails
 

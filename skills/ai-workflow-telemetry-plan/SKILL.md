@@ -1,6 +1,6 @@
 ---
 name: ai-workflow-telemetry-plan
-description: Use when a marketer or go-to-market operator needs AI workflow telemetry plan for Marketing Agents / Governance work involving AI marketing agent workflow, Campaign analytics QA, especially when the task must define quality, throughput, review, acceptance, rework, and business-impact telemetry.
+description: Use when you need AI workflow telemetry plan to define quality, throughput, review, acceptance, rework, and business-impact telemetry.
 ---
 
 # AI workflow telemetry plan
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs AI workflow tele
 
 - Produce AI workflow telemetry plan.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: workflow step, quality metric, acceptance signal, rework reason.
+- Use the artifact to decide: What the agent may draft, route, decide, or escalate.
+- Do not mark ready until: Every tool action has an input, output, owner, and fallback.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs AI workflow tele
 ## Output Contract
 
 Return AI workflow telemetry plan. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not AI workflow telemetry plan, the main decision is outside ai-marketing-agent-workflow, campaign-analytics-qa, or the user only needs broad strategy.
 
 ## Guardrails
 

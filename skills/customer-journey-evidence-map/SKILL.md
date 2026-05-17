@@ -1,6 +1,6 @@
 ---
 name: customer-journey-evidence-map
-description: Use when a marketer or go-to-market operator needs journey evidence map for Research / Audience Simulation work involving Customer research synthesis, Inbound chat qualification, especially when the task must map stages, questions, objections, proof needs, channels, and conversion gaps.
+description: Use when you need journey evidence map to map stages, questions, objections, proof needs, channels, and conversion gaps.
 ---
 
 # customer journey evidence map
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs journey evidence
 
 - Produce journey evidence map.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: stage, question, objection, proof need.
+- Use the artifact to decide: Which message, segment, or channel assumption changes.
+- Do not mark ready until: Observed evidence, synthesis, and recommendation are labeled separately.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs journey evidence
 ## Output Contract
 
 Return journey evidence map. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not journey evidence map, the main decision is outside customer-research-synthesis, inbound-chat-qualification, or the user only needs broad strategy.
 
 ## Guardrails
 

@@ -1,6 +1,6 @@
 ---
 name: share-of-answer-benchmark
-description: Use when a marketer or go-to-market operator needs share-of-answer report for AI Search / Agent Discovery work involving AI search visibility monitoring, Customer research synthesis, especially when the task must compare answer share, entity mentions, claim framing, and competitor displacement opportunities.
+description: Use when you need share-of-answer report to compare answer share, entity mentions, claim framing, and competitor displacement opportunities.
 ---
 
 # share of answer benchmark
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs share-of-answer 
 
 - Produce share-of-answer report.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: prompt cluster, entity mention, competitor alternative, answer framing.
+- Use the artifact to decide: Which prompts need monitoring, remediation, or new proof.
+- Do not mark ready until: Observed answer text is separated from interpretation.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs share-of-answer 
 ## Output Contract
 
 Return share-of-answer report. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not share-of-answer report, the main decision is outside ai-search-visibility-monitoring, customer-research-synthesis, or the user only needs broad strategy.
 
 ## Guardrails
 

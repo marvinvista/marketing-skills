@@ -1,6 +1,6 @@
 ---
 name: icp-segment-trigger-map
-description: Use when a marketer or go-to-market operator needs ICP trigger map for Lead Intelligence / Conversion work involving Customer research synthesis, Lead list building, especially when the task must define fit, segment, trigger, disqualifier, pain, proof, and channel logic.
+description: Use when you need ICP trigger map to define fit, segment, trigger, disqualifier, pain, proof, and channel logic.
 ---
 
 # ICP segment trigger map
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs ICP trigger map 
 
 - Produce ICP trigger map.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: segment, fit rule, trigger, disqualifier.
+- Use the artifact to decide: Which message, segment, or channel assumption changes.
+- Do not mark ready until: Observed evidence, synthesis, and recommendation are labeled separately.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs ICP trigger map 
 ## Output Contract
 
 Return ICP trigger map. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not ICP trigger map, the main decision is outside customer-research-synthesis, lead-list-building, or the user only needs broad strategy.
 
 ## Guardrails
 

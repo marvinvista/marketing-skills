@@ -1,6 +1,6 @@
 ---
 name: seo-brand-proof-governance
-description: Use when a marketer or go-to-market operator needs SEO proof governance brief for AI Search / Agent Discovery work involving SEO content briefing, Brand governance review, Answer source remediation, especially when the task must govern search and answer-ready content by approved proof, schema needs, claim risk, and publish decisions.
+description: Use when you need SEO proof governance brief to govern search and answer-ready content by approved proof, schema needs, claim risk, and publish decisions.
 ---
 
 # SEO brand proof governance
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs SEO proof govern
 
 - Produce SEO proof governance brief.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: target query, claim, approved proof, schema need.
+- Use the artifact to decide: Which page, section, or proof asset should be created or refreshed.
+- Do not mark ready until: Each brief includes the answer, proof, schema need, and indexability check.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs SEO proof govern
 ## Output Contract
 
 Return SEO proof governance brief. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not SEO proof governance brief, the main decision is outside seo-content-briefing, brand-governance-review, answer-source-remediation, or the user only needs broad strategy.
 
 ## Guardrails
 

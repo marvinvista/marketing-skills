@@ -1,6 +1,6 @@
 ---
 name: account-research-snapshot
-description: Use when a marketer or go-to-market operator needs account research snapshot for Lead Intelligence / Conversion work involving Lead enrichment and research, Customer research synthesis, especially when the task must summarize account context, role pain, trigger, proof match, objection, and first message angle.
+description: Use when you need account research snapshot to summarize account context, role pain, trigger, proof match, objection, and first message angle.
 ---
 
 # account research snapshot
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs account research
 
 - Produce account research snapshot.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: account context, role pain, trigger, proof match.
+- Use the artifact to decide: Which fields change score, route, or message.
+- Do not mark ready until: Every enrichment field has a usage rule and freshness standard.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs account research
 ## Output Contract
 
 Return account research snapshot. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not account research snapshot, the main decision is outside lead-enrichment-and-research, customer-research-synthesis, or the user only needs broad strategy.
 
 ## Guardrails
 

@@ -1,6 +1,6 @@
 ---
 name: automation-risk-register
-description: Use when a marketer or go-to-market operator needs automation risk register for Marketing Agents / Governance work involving AI marketing agent workflow, Brand governance review, Marketing ops orchestration, especially when the task must identify automation risks, mitigations, owners, monitoring, escalation, and rollback.
+description: Use when you need automation risk register to identify automation risks, mitigations, owners, monitoring, escalation, and rollback.
 ---
 
 # automation risk register
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs automation risk 
 
 - Produce automation risk register.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: risk, trigger, affected workflow, mitigation.
+- Use the artifact to decide: What the agent may draft, route, decide, or escalate.
+- Do not mark ready until: Every tool action has an input, output, owner, and fallback.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs automation risk 
 ## Output Contract
 
 Return automation risk register. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not automation risk register, the main decision is outside ai-marketing-agent-workflow, brand-governance-review, marketing-ops-orchestration, or the user only needs broad strategy.
 
 ## Guardrails
 

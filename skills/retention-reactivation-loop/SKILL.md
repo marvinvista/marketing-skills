@@ -1,6 +1,6 @@
 ---
 name: retention-reactivation-loop
-description: Use when a marketer or go-to-market operator needs retention or reactivation loop for Lifecycle / Ops / Analytics work involving Audience data sync, Outbound cadence automation, Marketing ops orchestration, especially when the task must design lifecycle campaigns for retention, winback, repeat purchase, or expansion.
+description: Use when you need retention or reactivation loop to design lifecycle campaigns for retention, winback, repeat purchase, or expansion.
 ---
 
 # retention reactivation loop
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs retention or rea
 
 - Produce retention or reactivation loop.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: lifecycle state, trigger, message, suppression.
+- Use the artifact to decide: Which audience is eligible for activation.
+- Do not mark ready until: Expected and actual counts are checked before activation.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs retention or rea
 ## Output Contract
 
 Return retention or reactivation loop. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not retention or reactivation loop, the main decision is outside audience-data-sync, outbound-cadence-automation, marketing-ops-orchestration, or the user only needs broad strategy.
 
 ## Guardrails
 

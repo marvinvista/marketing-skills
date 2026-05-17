@@ -1,6 +1,6 @@
 ---
 name: community-ambassador-loop-design
-description: Use when a marketer or go-to-market operator needs ambassador loop plan for Content / Creator / Social work involving UGC creator workflow, Social content automation, Local storefront growth, especially when the task must design member, customer, or local advocate loops that produce referrals, proof, and content.
+description: Use when you need ambassador loop plan to design member, customer, or local advocate loops that produce referrals, proof, and content.
 ---
 
 # community ambassador loop design
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs ambassador loop 
 
 - Produce ambassador loop plan.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: member segment, referral trigger, proof asset, reward.
+- Use the artifact to decide: Which creators or assets are approved, revised, renewed, or reused.
+- Do not mark ready until: Rights, usage windows, and edit permissions are explicit.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs ambassador loop 
 ## Output Contract
 
 Return ambassador loop plan. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not ambassador loop plan, the main decision is outside ugc-creator-workflow, social-content-automation, local-storefront-growth, or the user only needs broad strategy.
 
 ## Guardrails
 

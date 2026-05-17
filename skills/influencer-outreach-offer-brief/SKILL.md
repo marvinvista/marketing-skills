@@ -1,6 +1,6 @@
 ---
 name: influencer-outreach-offer-brief
-description: Use when a marketer or go-to-market operator needs creator outreach brief for Content / Creator / Social work involving UGC creator workflow, Social content automation, Outbound cadence automation, especially when the task must draft creator outreach, offer, deliverables, approvals, usage rights, and renewal terms.
+description: Use when you need creator outreach brief to draft creator outreach, offer, deliverables, approvals, usage rights, and renewal terms.
 ---
 
 # influencer outreach offer brief
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs creator outreach
 
 - Produce creator outreach brief.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: creator segment, offer, deliverables, usage rights.
+- Use the artifact to decide: Which creators or assets are approved, revised, renewed, or reused.
+- Do not mark ready until: Rights, usage windows, and edit permissions are explicit.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs creator outreach
 ## Output Contract
 
 Return creator outreach brief. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not creator outreach brief, the main decision is outside ugc-creator-workflow, social-content-automation, outbound-cadence-automation, or the user only needs broad strategy.
 
 ## Guardrails
 

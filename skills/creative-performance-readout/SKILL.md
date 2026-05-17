@@ -1,6 +1,6 @@
 ---
 name: creative-performance-readout
-description: Use when a marketer or go-to-market operator needs creative readout and next-test backlog for Creative / Ads / Assets work involving Ad creative generation, Campaign analytics QA, especially when the task must separate creative signal from tracking, spend, audience, and conversion-path noise.
+description: Use when you need creative readout and next-test backlog to separate creative signal from tracking, spend, audience, and conversion-path noise.
 ---
 
 # creative performance readout
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs creative readout
 
 - Produce creative readout and next-test backlog.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: asset, audience, spend context, tracking confidence.
+- Use the artifact to decide: Which variable changes in the next creative test.
+- Do not mark ready until: Each creative variant changes one declared variable or is marked exploratory.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs creative readout
 ## Output Contract
 
 Return creative readout and next-test backlog. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not creative readout and next-test backlog, the main decision is outside ad-creative-generation, campaign-analytics-qa, or the user only needs broad strategy.
 
 ## Guardrails
 

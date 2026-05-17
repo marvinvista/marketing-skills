@@ -1,6 +1,6 @@
 ---
 name: competitor-ad-teardown
-description: Use when a marketer or go-to-market operator needs competitor ad teardown for Creative / Ads / Assets work involving Ad creative generation, Customer research synthesis, especially when the task must reverse engineer competitor angles, proof, offers, formats, and gaps without copying execution.
+description: Use when you need competitor ad teardown to reverse engineer competitor angles, proof, offers, formats, and gaps without copying execution.
 ---
 
 # competitor ad teardown
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs competitor ad te
 
 - Produce competitor ad teardown.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: competitor angle, format, claim, proof.
+- Use the artifact to decide: Which variable changes in the next creative test.
+- Do not mark ready until: Each creative variant changes one declared variable or is marked exploratory.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs competitor ad te
 ## Output Contract
 
 Return competitor ad teardown. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not competitor ad teardown, the main decision is outside ad-creative-generation, customer-research-synthesis, or the user only needs broad strategy.
 
 ## Guardrails
 

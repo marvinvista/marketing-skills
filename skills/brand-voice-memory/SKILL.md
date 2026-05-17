@@ -1,6 +1,6 @@
 ---
 name: brand-voice-memory
-description: Use when a marketer or go-to-market operator needs brand voice memory for Marketing Agents / Governance work involving Brand governance review, Social content automation, especially when the task must distill approved voice, claims, examples, banned patterns, and review notes into reusable memory.
+description: Use when you need brand voice memory to distill approved voice, claims, examples, banned patterns, and review notes into reusable memory.
 ---
 
 # brand voice memory
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs brand voice memo
 
 - Produce brand voice memory.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: approved phrase, banned pattern, claim, proof.
+- Use the artifact to decide: What can publish, what needs edits, and what needs explicit approval.
+- Do not mark ready until: Unsupported claims are blocked or rewritten before launch.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs brand voice memo
 ## Output Contract
 
 Return brand voice memory. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not brand voice memory, the main decision is outside brand-governance-review, social-content-automation, or the user only needs broad strategy.
 
 ## Guardrails
 

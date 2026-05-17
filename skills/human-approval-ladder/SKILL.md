@@ -1,6 +1,6 @@
 ---
 name: human-approval-ladder
-description: Use when a marketer or go-to-market operator needs approval ladder for Marketing Agents / Governance work involving AI marketing agent workflow, Brand governance review, especially when the task must define what AI can draft, decide, route, or escalate based on risk.
+description: Use when you need approval ladder to define what AI can draft, decide, route, or escalate based on risk.
 ---
 
 # human approval ladder
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs approval ladder 
 
 - Produce approval ladder.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: risk level, action right, review owner, escalation trigger.
+- Use the artifact to decide: What the agent may draft, route, decide, or escalate.
+- Do not mark ready until: Every tool action has an input, output, owner, and fallback.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs approval ladder 
 ## Output Contract
 
 Return approval ladder. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not approval ladder, the main decision is outside ai-marketing-agent-workflow, brand-governance-review, or the user only needs broad strategy.
 
 ## Guardrails
 

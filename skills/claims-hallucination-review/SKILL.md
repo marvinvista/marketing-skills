@@ -1,6 +1,6 @@
 ---
 name: claims-hallucination-review
-description: Use when a marketer or go-to-market operator needs claims review checklist for Marketing Agents / Governance work involving Brand governance review, Answer source remediation, AI marketing agent workflow, especially when the task must review AI-generated marketing for unsupported claims, factual drift, missing caveats, and legal risk.
+description: Use when you need claims review checklist to review AI-generated marketing for unsupported claims, factual drift, missing caveats, and legal risk.
 ---
 
 # claims hallucination review
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs claims review ch
 
 - Produce claims review checklist.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: generated claim, evidence status, drift risk, caveat.
+- Use the artifact to decide: What can publish, what needs edits, and what needs explicit approval.
+- Do not mark ready until: Unsupported claims are blocked or rewritten before launch.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs claims review ch
 ## Output Contract
 
 Return claims review checklist. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not claims review checklist, the main decision is outside brand-governance-review, answer-source-remediation, ai-marketing-agent-workflow, or the user only needs broad strategy.
 
 ## Guardrails
 

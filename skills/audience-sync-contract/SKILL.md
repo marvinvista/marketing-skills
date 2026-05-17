@@ -1,6 +1,6 @@
 ---
 name: audience-sync-contract
-description: Use when a marketer or go-to-market operator needs audience sync contract for Lifecycle / Ops / Analytics work involving Audience data sync, especially when the task must define audience fields, refresh cadence, destinations, exclusions, and owner checks.
+description: Use when you need audience sync contract to define audience fields, refresh cadence, destinations, exclusions, and owner checks.
 ---
 
 # audience sync contract
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs audience sync co
 
 - Produce audience sync contract.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: audience, field, join key, refresh cadence.
+- Use the artifact to decide: Which audience is eligible for activation.
+- Do not mark ready until: Expected and actual counts are checked before activation.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs audience sync co
 ## Output Contract
 
 Return audience sync contract. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not audience sync contract, the main decision is outside audience-data-sync, or the user only needs broad strategy.
 
 ## Guardrails
 

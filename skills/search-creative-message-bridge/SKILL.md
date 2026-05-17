@@ -1,6 +1,6 @@
 ---
 name: search-creative-message-bridge
-description: Use when a marketer or go-to-market operator needs search-to-creative message bridge for AI Search / Agent Discovery work involving AI search visibility monitoring, Ad creative generation, Customer research synthesis, especially when the task must translate answer-surface insights into creative angles, proof reuse, channel messages, and next tests.
+description: Use when you need search-to-creative message bridge to translate answer-surface insights into creative angles, proof reuse, channel messages, and next tests.
 ---
 
 # search creative message bridge
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs search-to-creati
 
 - Produce search-to-creative message bridge.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: answer insight, buyer belief, creative angle, proof to reuse.
+- Use the artifact to decide: Which prompts need monitoring, remediation, or new proof.
+- Do not mark ready until: Observed answer text is separated from interpretation.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs search-to-creati
 ## Output Contract
 
 Return search-to-creative message bridge. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not search-to-creative message bridge, the main decision is outside ai-search-visibility-monitoring, ad-creative-generation, customer-research-synthesis, or the user only needs broad strategy.
 
 ## Guardrails
 

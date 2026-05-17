@@ -1,6 +1,6 @@
 ---
 name: visual-asset-prompt-brief
-description: Use when a marketer or go-to-market operator needs visual prompt brief and production notes for Creative / Ads / Assets work involving Ad creative generation, Product image generation, especially when the task must write generation prompts and production notes for image, video, and mixed-media ad assets.
+description: Use when you need visual prompt brief and production notes to write generation prompts and production notes for image, video, and mixed-media ad assets.
 ---
 
 # visual asset prompt brief
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs visual prompt br
 
 - Produce visual prompt brief and production notes.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: asset goal, scene, product detail, style constraint.
+- Use the artifact to decide: Which variable changes in the next creative test.
+- Do not mark ready until: Each creative variant changes one declared variable or is marked exploratory.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs visual prompt br
 ## Output Contract
 
 Return visual prompt brief and production notes. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not visual prompt brief and production notes, the main decision is outside ad-creative-generation, product-image-generation, or the user only needs broad strategy.
 
 ## Guardrails
 

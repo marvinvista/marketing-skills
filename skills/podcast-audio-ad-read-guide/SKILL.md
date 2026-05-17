@@ -1,6 +1,6 @@
 ---
 name: podcast-audio-ad-read-guide
-description: Use when a marketer or go-to-market operator needs audio ad script and read guide for Creative / Ads / Assets work involving Social content automation, Ad creative generation, especially when the task must write host-read or produced audio ads with pronunciation, timing, claim, and CTA control.
+description: Use when you need audio ad script and read guide to write host-read or produced audio ads with pronunciation, timing, claim, and CTA control.
 ---
 
 # podcast audio ad read guide
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs audio ad script 
 
 - Produce audio ad script and read guide.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: host line, timing, pronunciation, claim.
+- Use the artifact to decide: Which content repeats as a system versus a one-off post.
+- Do not mark ready until: Hooks, examples, CTAs, and review notes are channel-specific.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs audio ad script 
 ## Output Contract
 
 Return audio ad script and read guide. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not audio ad script and read guide, the main decision is outside social-content-automation, ad-creative-generation, or the user only needs broad strategy.
 
 ## Guardrails
 

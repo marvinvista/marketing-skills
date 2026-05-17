@@ -1,6 +1,6 @@
 ---
 name: research-decision-memo
-description: Use when a marketer or go-to-market operator needs research decision memo for Research / Audience Simulation work involving Customer research synthesis, especially when the task must convert research findings into a recommendation, confidence level, rejected options, and next evidence.
+description: Use when you need research decision memo to convert research findings into a recommendation, confidence level, rejected options, and next evidence.
 ---
 
 # research decision memo
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs research decisio
 
 - Produce research decision memo.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: decision, evidence, finding, confidence.
+- Use the artifact to decide: Which message, segment, or channel assumption changes.
+- Do not mark ready until: Observed evidence, synthesis, and recommendation are labeled separately.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs research decisio
 ## Output Contract
 
 Return research decision memo. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not research decision memo, the main decision is outside customer-research-synthesis, or the user only needs broad strategy.
 
 ## Guardrails
 

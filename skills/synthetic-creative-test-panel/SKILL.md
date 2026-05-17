@@ -1,6 +1,6 @@
 ---
 name: synthetic-creative-test-panel
-description: Use when a marketer or go-to-market operator needs synthetic creative test panel for Creative / Ads / Assets work involving Synthetic audience simulation, Ad creative generation, Message testing, especially when the task must use synthetic audience scenarios to pressure-test creative angles, reactions, confidence, and validation needs.
+description: Use when you need synthetic creative test panel to use synthetic audience scenarios to pressure-test creative angles, reactions, confidence, and validation needs.
 ---
 
 # synthetic creative test panel
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs synthetic creati
 
 - Produce synthetic creative test panel.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: audience assumption, scenario, creative angle, simulated reaction.
+- Use the artifact to decide: Which hypotheses are worth testing with real evidence.
+- Do not mark ready until: Synthetic output is labeled separately from observed evidence.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs synthetic creati
 ## Output Contract
 
 Return synthetic creative test panel. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not synthetic creative test panel, the main decision is outside synthetic-audience-simulation, ad-creative-generation, message-testing, or the user only needs broad strategy.
 
 ## Guardrails
 

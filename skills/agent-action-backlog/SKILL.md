@@ -1,6 +1,6 @@
 ---
 name: agent-action-backlog
-description: Use when a marketer or go-to-market operator needs ranked agent-discovery action backlog for AI Search / Agent Discovery work involving AI search visibility monitoring, Answer source remediation, Marketing ops orchestration, especially when the task must convert visibility gaps into the smallest on-page, off-page, data, and workflow actions to ship.
+description: Use when you need ranked agent-discovery action backlog to convert visibility gaps into the smallest on-page, off-page, data, and workflow actions to ship.
 ---
 
 # agent action backlog
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs ranked agent-dis
 
 - Produce ranked agent-discovery action backlog.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: visibility gap, surface, smallest action, asset or system touched.
+- Use the artifact to decide: Which prompts need monitoring, remediation, or new proof.
+- Do not mark ready until: Observed answer text is separated from interpretation.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs ranked agent-dis
 ## Output Contract
 
 Return ranked agent-discovery action backlog. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not ranked agent-discovery action backlog, the main decision is outside ai-search-visibility-monitoring, answer-source-remediation, marketing-ops-orchestration, or the user only needs broad strategy.
 
 ## Guardrails
 

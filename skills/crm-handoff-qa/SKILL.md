@@ -1,6 +1,6 @@
 ---
 name: crm-handoff-qa
-description: Use when a marketer or go-to-market operator needs CRM handoff QA checklist for Lead Intelligence / Conversion work involving Marketing ops orchestration, Audience data sync, especially when the task must check campaign response, enrichment, owner assignment, next step, and reporting fields.
+description: Use when you need CRM handoff QA checklist to check campaign response, enrichment, owner assignment, next step, and reporting fields.
 ---
 
 # CRM handoff QA
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs CRM handoff QA c
 
 - Produce CRM handoff QA checklist.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: record, owner, route, next step.
+- Use the artifact to decide: Which work can launch, wait, or roll back.
+- Do not mark ready until: Every dependency has an owner and failure fallback.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs CRM handoff QA c
 ## Output Contract
 
 Return CRM handoff QA checklist. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not CRM handoff QA checklist, the main decision is outside marketing-ops-orchestration, audience-data-sync, or the user only needs broad strategy.
 
 ## Guardrails
 

@@ -1,6 +1,6 @@
 ---
 name: creative-fatigue-refresh-plan
-description: Use when a marketer or go-to-market operator needs creative refresh plan for Creative / Ads / Assets work involving Ad creative generation, Campaign analytics QA, especially when the task must diagnose creative fatigue and plan refreshes by angle, asset, audience, and format.
+description: Use when you need creative refresh plan to diagnose creative fatigue and plan refreshes by angle, asset, audience, and format.
 ---
 
 # creative fatigue refresh plan
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs creative refresh
 
 - Produce creative refresh plan.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: fatigued asset, symptom, retained learning, variable to refresh.
+- Use the artifact to decide: Which variable changes in the next creative test.
+- Do not mark ready until: Each creative variant changes one declared variable or is marked exploratory.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs creative refresh
 ## Output Contract
 
 Return creative refresh plan. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not creative refresh plan, the main decision is outside ad-creative-generation, campaign-analytics-qa, or the user only needs broad strategy.
 
 ## Guardrails
 

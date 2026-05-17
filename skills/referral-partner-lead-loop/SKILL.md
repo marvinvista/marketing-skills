@@ -1,6 +1,6 @@
 ---
 name: referral-partner-lead-loop
-description: Use when a marketer or go-to-market operator needs referral lead loop plan for Lead Intelligence / Conversion work involving Lead list building, Outbound cadence automation, especially when the task must design partner, affiliate, referral, or ambassador lead flow with tracking and ownership.
+description: Use when you need referral lead loop plan to design partner, affiliate, referral, or ambassador lead flow with tracking and ownership.
 ---
 
 # referral partner lead loop
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs referral lead lo
 
 - Produce referral lead loop plan.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: partner type, referral trigger, lead handoff, tracking field.
+- Use the artifact to decide: Which records qualify for action now.
+- Do not mark ready until: Every accepted record has fit, trigger, evidence, and a route.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs referral lead lo
 ## Output Contract
 
 Return referral lead loop plan. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not referral lead loop plan, the main decision is outside lead-list-building, outbound-cadence-automation, or the user only needs broad strategy.
 
 ## Guardrails
 

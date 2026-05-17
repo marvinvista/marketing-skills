@@ -1,6 +1,6 @@
 ---
 name: ai-answer-visibility-scorecard
-description: Use when a marketer or go-to-market operator needs visibility scorecard with remediation backlog for AI Search / Agent Discovery work involving AI search visibility monitoring, Answer source remediation, especially when the task must score brand visibility, answer accuracy, citation quality, and next-action usefulness across answer surfaces.
+description: Use when you need visibility scorecard with remediation backlog to score brand visibility, answer accuracy, citation quality, and next-action usefulness across answer surfaces.
 ---
 
 # AI answer visibility scorecard
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs visibility score
 
 - Produce visibility scorecard with remediation backlog.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: prompt, surface, mention status, rank.
+- Use the artifact to decide: Which prompts need monitoring, remediation, or new proof.
+- Do not mark ready until: Observed answer text is separated from interpretation.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs visibility score
 ## Output Contract
 
 Return visibility scorecard with remediation backlog. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not visibility scorecard with remediation backlog, the main decision is outside ai-search-visibility-monitoring, answer-source-remediation, or the user only needs broad strategy.
 
 ## Guardrails
 

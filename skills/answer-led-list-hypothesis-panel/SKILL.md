@@ -1,6 +1,6 @@
 ---
 name: answer-led-list-hypothesis-panel
-description: Use when a marketer or go-to-market operator needs answer-led list hypothesis panel for Lead Intelligence / Conversion work involving Lead list building, Answer source remediation, Synthetic audience simulation, especially when the task must use answer proof gaps and synthetic audience checks to refine list hypotheses, disqualifiers, and follow-up routes.
+description: Use when you need answer-led list hypothesis panel to use answer proof gaps and synthetic audience checks to refine list hypotheses, disqualifiers, and follow-up routes.
 ---
 
 # answer-led list hypothesis panel
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs answer-led list 
 
 - Produce answer-led list hypothesis panel.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: answer gap, proof gap, list hypothesis, target segment.
+- Use the artifact to decide: Which records qualify for action now.
+- Do not mark ready until: Every accepted record has fit, trigger, evidence, and a route.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs answer-led list 
 ## Output Contract
 
 Return answer-led list hypothesis panel. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not answer-led list hypothesis panel, the main decision is outside lead-list-building, answer-source-remediation, synthetic-audience-simulation, or the user only needs broad strategy.
 
 ## Guardrails
 

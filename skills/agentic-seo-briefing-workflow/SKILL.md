@@ -1,6 +1,6 @@
 ---
 name: agentic-seo-briefing-workflow
-description: Use when a marketer or go-to-market operator needs agentic SEO briefing workflow for Marketing Agents / Governance work involving AI marketing agent workflow, SEO content briefing, especially when the task must scope an AI workflow for target queries, proof lookup, brief drafting, schema actions, review gates, and publish handoff.
+description: Use when you need agentic SEO briefing workflow to scope an AI workflow for target queries, proof lookup, brief drafting, schema actions, review gates, and publish handoff.
 ---
 
 # agentic SEO briefing workflow
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs agentic SEO brie
 
 - Produce agentic SEO briefing workflow.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: agent job, target query, brief input, proof lookup.
+- Use the artifact to decide: What the agent may draft, route, decide, or escalate.
+- Do not mark ready until: Every tool action has an input, output, owner, and fallback.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs agentic SEO brie
 ## Output Contract
 
 Return agentic SEO briefing workflow. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not agentic SEO briefing workflow, the main decision is outside ai-marketing-agent-workflow, seo-content-briefing, or the user only needs broad strategy.
 
 ## Guardrails
 

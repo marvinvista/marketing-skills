@@ -1,6 +1,6 @@
 ---
 name: content-repurposing-map
-description: Use when a marketer or go-to-market operator needs content repurposing map for Content / Creator / Social work involving Social content automation, SEO content briefing, Ad creative generation, especially when the task must map one source asset into ads, social posts, emails, landing copy, and sales enablement.
+description: Use when you need content repurposing map to map one source asset into ads, social posts, emails, landing copy, and sales enablement.
 ---
 
 # content repurposing map
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs content repurpos
 
 - Produce content repurposing map.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: original asset, extractable claim, channel adaptation, format.
+- Use the artifact to decide: Which content repeats as a system versus a one-off post.
+- Do not mark ready until: Hooks, examples, CTAs, and review notes are channel-specific.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs content repurpos
 ## Output Contract
 
 Return content repurposing map. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not content repurposing map, the main decision is outside social-content-automation, seo-content-briefing, ad-creative-generation, or the user only needs broad strategy.
 
 ## Guardrails
 

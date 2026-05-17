@@ -1,6 +1,6 @@
 ---
 name: catalog-ad-feed-plan
-description: Use when a marketer or go-to-market operator needs catalog creative feed plan for Creative / Ads / Assets work involving Ad creative generation, Product image generation, Audience data sync, especially when the task must turn product attributes, audience segments, and creative rules into a catalog ad feed plan.
+description: Use when you need catalog creative feed plan to turn product attributes, audience segments, and creative rules into a catalog ad feed plan.
 ---
 
 # catalog ad feed plan
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs catalog creative
 
 - Produce catalog creative feed plan.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: product field, audience segment, creative rule, image rule.
+- Use the artifact to decide: Which variable changes in the next creative test.
+- Do not mark ready until: Each creative variant changes one declared variable or is marked exploratory.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs catalog creative
 ## Output Contract
 
 Return catalog creative feed plan. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not catalog creative feed plan, the main decision is outside ad-creative-generation, product-image-generation, audience-data-sync, or the user only needs broad strategy.
 
 ## Guardrails
 

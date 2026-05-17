@@ -1,6 +1,6 @@
 ---
 name: audience-list-sync-readiness
-description: Use when a marketer or go-to-market operator needs audience list sync readiness check for Lead Intelligence / Conversion work involving Audience data sync, Lead list building, especially when the task must align audience segments, list criteria, join keys, consent status, exclusions, destinations, and count checks.
+description: Use when you need audience list sync readiness check to align audience segments, list criteria, join keys, consent status, exclusions, destinations, and count checks.
 ---
 
 # audience list sync readiness
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs audience list sy
 
 - Produce audience list sync readiness check.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: audience segment, list criterion, join key, consent status.
+- Use the artifact to decide: Which audience is eligible for activation.
+- Do not mark ready until: Expected and actual counts are checked before activation.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs audience list sy
 ## Output Contract
 
 Return audience list sync readiness check. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not audience list sync readiness check, the main decision is outside audience-data-sync, lead-list-building, or the user only needs broad strategy.
 
 ## Guardrails
 

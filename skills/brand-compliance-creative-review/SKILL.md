@@ -1,6 +1,6 @@
 ---
 name: brand-compliance-creative-review
-description: Use when a marketer or go-to-market operator needs creative compliance review for Creative / Ads / Assets work involving Brand governance review, Ad creative generation, especially when the task must review ads and assets for claim support, brand fit, legal risk, and platform constraints.
+description: Use when you need creative compliance review to review ads and assets for claim support, brand fit, legal risk, and platform constraints.
 ---
 
 # brand compliance creative review
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs creative complia
 
 - Produce creative compliance review.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: asset, claim, proof, voice fit.
+- Use the artifact to decide: What can publish, what needs edits, and what needs explicit approval.
+- Do not mark ready until: Unsupported claims are blocked or rewritten before launch.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs creative complia
 ## Output Contract
 
 Return creative compliance review. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not creative compliance review, the main decision is outside brand-governance-review, ad-creative-generation, or the user only needs broad strategy.
 
 ## Guardrails
 

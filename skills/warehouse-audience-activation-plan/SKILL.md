@@ -1,6 +1,6 @@
 ---
 name: warehouse-audience-activation-plan
-description: Use when a marketer or go-to-market operator needs warehouse activation plan for Lifecycle / Ops / Analytics work involving Audience data sync, especially when the task must turn warehouse tables into campaign audiences with joins, QA, consent, and refresh rules.
+description: Use when you need warehouse activation plan to turn warehouse tables into campaign audiences with joins, QA, consent, and refresh rules.
 ---
 
 # warehouse audience activation plan
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs warehouse activa
 
 - Produce warehouse activation plan.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: table, join key, segment rule, consent.
+- Use the artifact to decide: Which audience is eligible for activation.
+- Do not mark ready until: Expected and actual counts are checked before activation.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs warehouse activa
 ## Output Contract
 
 Return warehouse activation plan. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not warehouse activation plan, the main decision is outside audience-data-sync, or the user only needs broad strategy.
 
 ## Guardrails
 

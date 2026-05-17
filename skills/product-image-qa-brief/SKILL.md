@@ -1,6 +1,6 @@
 ---
 name: product-image-qa-brief
-description: Use when a marketer or go-to-market operator needs product image brief and QA checklist for Creative / Ads / Assets work involving Product image generation, Ad creative generation, especially when the task must define product image generation constraints, shot types, merchandising context, and QA checks.
+description: Use when you need product image brief and QA checklist to define product image generation constraints, shot types, merchandising context, and QA checks.
 ---
 
 # product image QA brief
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs product image br
 
 - Produce product image brief and QA checklist.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: product attribute, shot type, context, fidelity risk.
+- Use the artifact to decide: Which image prompts are ready for generation or retouching.
+- Do not mark ready until: Product details, scale, text, and prohibited artifacts are checked.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs product image br
 ## Output Contract
 
 Return product image brief and QA checklist. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not product image brief and QA checklist, the main decision is outside product-image-generation, ad-creative-generation, or the user only needs broad strategy.
 
 ## Guardrails
 

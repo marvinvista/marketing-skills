@@ -1,6 +1,6 @@
 ---
 name: intent-led-outbound-sequence
-description: Use when a marketer or go-to-market operator needs intent-led email sequence for Lead Intelligence / Conversion work involving Outbound cadence automation, Lead enrichment and research, especially when the task must write outbound emails tied to a specific trigger, pain, proof, and reply route.
+description: Use when you need intent-led email sequence to write outbound emails tied to a specific trigger, pain, proof, and reply route.
 ---
 
 # intent-led outbound sequence
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs intent-led email
 
 - Produce intent-led email sequence.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: trigger, pain, proof, opening line.
+- Use the artifact to decide: Which step runs, stops, or escalates based on signal.
+- Do not mark ready until: Every step has a trigger, wait rule, stop rule, and reply route.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs intent-led email
 ## Output Contract
 
 Return intent-led email sequence. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not intent-led email sequence, the main decision is outside outbound-cadence-automation, lead-enrichment-and-research, or the user only needs broad strategy.
 
 ## Guardrails
 

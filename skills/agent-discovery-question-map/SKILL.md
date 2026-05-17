@@ -1,6 +1,6 @@
 ---
 name: agent-discovery-question-map
-description: Use when a marketer or go-to-market operator needs question map, prompt set, and proof inventory for AI Search / Agent Discovery work involving AI search visibility monitoring, Answer source remediation, especially when the task must map buyer questions to the answer engines, agents, and proof assets that can influence discovery.
+description: Use when you need question map, prompt set, and proof inventory to map buyer questions to the answer engines, agents, and proof assets that can influence discovery.
 ---
 
 # agent discovery question map
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs question map, pr
 
 - Produce question map, prompt set, and proof inventory.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: buyer question, persona, intent stage, answer surface.
+- Use the artifact to decide: Which prompts need monitoring, remediation, or new proof.
+- Do not mark ready until: Observed answer text is separated from interpretation.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs question map, pr
 ## Output Contract
 
 Return question map, prompt set, and proof inventory. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not question map, prompt set, and proof inventory, the main decision is outside ai-search-visibility-monitoring, answer-source-remediation, or the user only needs broad strategy.
 
 ## Guardrails
 

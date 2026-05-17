@@ -1,6 +1,6 @@
 ---
 name: prompt-library-maintenance
-description: Use when a marketer or go-to-market operator needs prompt library maintenance plan for Marketing Agents / Governance work involving AI marketing agent workflow, especially when the task must maintain prompt patterns, examples, failures, variants, owners, and version notes.
+description: Use when you need prompt library maintenance plan to maintain prompt patterns, examples, failures, variants, owners, and version notes.
 ---
 
 # prompt library maintenance
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs prompt library m
 
 - Produce prompt library maintenance plan.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: prompt pattern, example, variant, failure.
+- Use the artifact to decide: What the agent may draft, route, decide, or escalate.
+- Do not mark ready until: Every tool action has an input, output, owner, and fallback.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs prompt library m
 ## Output Contract
 
 Return prompt library maintenance plan. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not prompt library maintenance plan, the main decision is outside ai-marketing-agent-workflow, or the user only needs broad strategy.
 
 ## Guardrails
 

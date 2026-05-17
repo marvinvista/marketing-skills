@@ -228,6 +228,13 @@ def helper_tests() -> list[str]:
     return [path.relative_to(REPO_ROOT).as_posix() for path in test_paths]
 
 
+def behavior_contract_tests(write_report: bool) -> None:
+    args = [sys.executable, "scripts/test_skill_behavior_contracts.py"]
+    if write_report:
+        args.append("--write-report")
+    run_command(args)
+
+
 def write_report(results: list[SkillResult], helper_test_paths: list[str]) -> None:
     passed = sum(1 for result in results if result.status == "pass")
     lines = [
@@ -243,6 +250,7 @@ def write_report(results: list[SkillResult], helper_test_paths: list[str]) -> No
         f"- Helper tests passed: {len(helper_test_paths)}",
         "- Install-copy test: passed for every skill",
         "- Packaging and utility threshold: passed for every skill",
+        "- Behavior contracts: passed for every skill, including 10 deep edge-case fixtures",
         "- Boundary scan: passed",
         "",
         "## Method",
@@ -250,6 +258,7 @@ def write_report(results: list[SkillResult], helper_test_paths: list[str]) -> No
         "- Copied every skill into a temporary install root and verified required files.",
         "- Checked OpenAI-style progressive disclosure: concise `SKILL.md`, trigger frontmatter, agent metadata, and detailed `references/pattern.md`.",
         "- Checked usefulness criteria: explicit inputs, decision rules, procedure, artifact fields, QA checks, failure modes, proof metrics, and next action.",
+        "- Verified prompt-to-artifact behavior contracts for every skill and deeper edge-case contracts for the highest-risk skills.",
         "- Ran every helper-backed skill test.",
         "",
         "## Results",
@@ -289,6 +298,7 @@ def main() -> int:
 
     results = [evaluate_skill(skill) for skill in skills]
     failures = [result for result in results if result.status != "pass"]
+    behavior_contract_tests(args.write_report)
     helper_test_paths = helper_tests()
     validate_boundary_text([REPORT_FILE] if REPORT_FILE.exists() else [])
 

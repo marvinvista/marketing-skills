@@ -1,6 +1,6 @@
 ---
 name: multichannel-prospecting-orchestration
-description: Use when a marketer or go-to-market operator needs multichannel prospecting map for Lead Intelligence / Conversion work involving Outbound cadence automation, Marketing ops orchestration, especially when the task must coordinate email, LinkedIn, phone, retargeting, chat, and sales owner handoff.
+description: Use when you need multichannel prospecting map to coordinate email, LinkedIn, phone, retargeting, chat, and sales owner handoff.
 ---
 
 # multichannel prospecting orchestration
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs multichannel pro
 
 - Produce multichannel prospecting map.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: channel, step, trigger, owner.
+- Use the artifact to decide: Which step runs, stops, or escalates based on signal.
+- Do not mark ready until: Every step has a trigger, wait rule, stop rule, and reply route.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs multichannel pro
 ## Output Contract
 
 Return multichannel prospecting map. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not multichannel prospecting map, the main decision is outside outbound-cadence-automation, marketing-ops-orchestration, or the user only needs broad strategy.
 
 ## Guardrails
 

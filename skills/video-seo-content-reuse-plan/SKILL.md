@@ -1,6 +1,6 @@
 ---
 name: video-seo-content-reuse-plan
-description: Use when a marketer or go-to-market operator needs video SEO reuse plan for Creative / Ads / Assets work involving Video ad production, SEO content briefing, Social content automation, especially when the task must convert video assets into search-answer blocks, social cuts, proof moments, and reuse ownership.
+description: Use when you need video SEO reuse plan to convert video assets into search-answer blocks, social cuts, proof moments, and reuse ownership.
 ---
 
 # video SEO content reuse plan
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs video SEO reuse 
 
 - Produce video SEO reuse plan.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: video asset, transcript moment, target query, answer block.
+- Use the artifact to decide: Which moments belong in the first seconds versus proof body.
+- Do not mark ready until: The storyboard names timing, visual, line, caption, and CTA.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs video SEO reuse 
 ## Output Contract
 
 Return video SEO reuse plan. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not video SEO reuse plan, the main decision is outside video-ad-production, seo-content-briefing, social-content-automation, or the user only needs broad strategy.
 
 ## Guardrails
 

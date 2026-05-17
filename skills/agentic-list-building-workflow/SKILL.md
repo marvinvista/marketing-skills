@@ -1,6 +1,6 @@
 ---
 name: agentic-list-building-workflow
-description: Use when a marketer or go-to-market operator needs agentic list building workflow for Lead Intelligence / Conversion work involving AI marketing agent workflow, Lead list building, especially when the task must scope an AI workflow for list criteria, evidence lookup, disqualification, routing actions, and review gates.
+description: Use when you need agentic list building workflow to scope an AI workflow for list criteria, evidence lookup, disqualification, routing actions, and review gates.
 ---
 
 # agentic list building workflow
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs agentic list bui
 
 - Produce agentic list building workflow.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: agent job, target segment, list criteria, evidence lookup.
+- Use the artifact to decide: What the agent may draft, route, decide, or escalate.
+- Do not mark ready until: Every tool action has an input, output, owner, and fallback.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs agentic list bui
 ## Output Contract
 
 Return agentic list building workflow. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not agentic list building workflow, the main decision is outside ai-marketing-agent-workflow, lead-list-building, or the user only needs broad strategy.
 
 ## Guardrails
 

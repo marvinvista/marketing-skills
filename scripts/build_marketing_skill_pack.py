@@ -1355,6 +1355,33 @@ def skill_specific_work_product(skill: SkillSpec) -> list[str]:
     ]
 
 
+def skill_core_fields(skill: SkillSpec) -> list[str]:
+    core_fields = SKILL_SPECIFIC_FIELDS.get(skill.name)
+    if not core_fields:
+        raise ValueError(f"missing skill-specific fields for {skill.name}")
+    return core_fields
+
+
+def skill_specific_checklist(skill: SkillSpec) -> list[str]:
+    fields = ", ".join(skill_core_fields(skill)[:4])
+    primary_surface = surface_configs(skill)[0][1]
+    primary_decision = primary_surface["decisions"][0]
+    primary_qa = primary_surface["qa"][0]
+    return [
+        f"Anchor the artifact around these fields: {fields}.",
+        f"Use the artifact to decide: {primary_decision}.",
+        f"Do not mark ready until: {primary_qa.rstrip('.')}.",
+    ]
+
+
+def adjacent_boundary(skill: SkillSpec) -> str:
+    surfaces = ", ".join(skill.surfaces)
+    return (
+        f"Use another skill if the final artifact is not {skill.output}, "
+        f"the main decision is outside {surfaces}, or the user only needs broad strategy."
+    )
+
+
 def required_inputs(skill: SkillSpec) -> list[str]:
     config = CATEGORY_CONFIG[skill.category]
     return unique(
@@ -1443,11 +1470,7 @@ def ensure_initialized(skill: SkillSpec) -> None:
 
 
 def skill_description(skill: SkillSpec) -> str:
-    return (
-        f"Use when a marketer or go-to-market operator needs {skill.output} "
-        f"for {skill.category} work involving {surface_labels(skill)}, especially when "
-        f"the task must {skill.mechanic}."
-    )
+    return f"Use when you need {skill.output} to {skill.mechanic}."
 
 
 def build_skill_md(skill: SkillSpec) -> str:
@@ -1455,6 +1478,8 @@ def build_skill_md(skill: SkillSpec) -> str:
     if skill.script:
         script_note = f"\n- Run `scripts/{skill.script}` when the user provides structured inputs for the repeatable table, scorecard, or checklist."
     description = skill_description(skill)
+    checklist = "\n".join(f"- {item}" for item in skill_specific_checklist(skill))
+    boundary = adjacent_boundary(skill)
     return f"""---
 name: {skill.name}
 description: {description}
@@ -1467,6 +1492,10 @@ description: {description}
 - Produce {skill.output}.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.{script_note}
 
+## Skill-Specific Checklist
+
+{checklist}
+
 ## Workflow
 
 1. Confirm the requested artifact, target audience, and review owner.
@@ -1477,6 +1506,10 @@ description: {description}
 ## Output Contract
 
 Return {skill.output}. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+{boundary}
 
 ## Guardrails
 

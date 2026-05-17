@@ -1,6 +1,6 @@
 ---
 name: marketing-output-eval-harness
-description: Use when a marketer or go-to-market operator needs marketing eval harness for Marketing Agents / Governance work involving AI marketing agent workflow, Campaign analytics QA, especially when the task must create evals for factuality, claim support, brand fit, usefulness, and operational reliability.
+description: Use when you need marketing eval harness to create evals for factuality, claim support, brand fit, usefulness, and operational reliability.
 ---
 
 # marketing output eval harness
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs marketing eval h
 
 - Produce marketing eval harness.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: criterion, test case, expected behavior, failure mode.
+- Use the artifact to decide: What the agent may draft, route, decide, or escalate.
+- Do not mark ready until: Every tool action has an input, output, owner, and fallback.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs marketing eval h
 ## Output Contract
 
 Return marketing eval harness. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not marketing eval harness, the main decision is outside ai-marketing-agent-workflow, campaign-analytics-qa, or the user only needs broad strategy.
 
 ## Guardrails
 

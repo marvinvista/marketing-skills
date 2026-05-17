@@ -1,6 +1,6 @@
 ---
 name: voiceover-localization-workflow
-description: Use when a marketer or go-to-market operator needs voiceover localization workflow for Content / Creator / Social work involving Video ad production, Social content automation, especially when the task must plan translated or localized voice assets with tone, timing, proof, and review checks.
+description: Use when you need voiceover localization workflow to plan translated or localized voice assets with tone, timing, proof, and review checks.
 ---
 
 # voiceover localization workflow
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs voiceover locali
 
 - Produce voiceover localization workflow.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: source script, locale, timing, tone.
+- Use the artifact to decide: Which moments belong in the first seconds versus proof body.
+- Do not mark ready until: The storyboard names timing, visual, line, caption, and CTA.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs voiceover locali
 ## Output Contract
 
 Return voiceover localization workflow. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not voiceover localization workflow, the main decision is outside video-ad-production, social-content-automation, or the user only needs broad strategy.
 
 ## Guardrails
 

@@ -1,6 +1,6 @@
 ---
 name: offer-angle-mining
-description: Use when a marketer or go-to-market operator needs offer angle map for Creative / Ads / Assets work involving Ad creative generation, Customer research synthesis, especially when the task must mine research, reviews, competitor ads, and sales objections for offer angles worth testing.
+description: Use when you need offer angle map to mine research, reviews, competitor ads, and sales objections for offer angles worth testing.
 ---
 
 # offer angle mining
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs offer angle map 
 
 - Produce offer angle map.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: audience segment, pain, desire, objection.
+- Use the artifact to decide: Which variable changes in the next creative test.
+- Do not mark ready until: Each creative variant changes one declared variable or is marked exploratory.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs offer angle map 
 ## Output Contract
 
 Return offer angle map. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not offer angle map, the main decision is outside ad-creative-generation, customer-research-synthesis, or the user only needs broad strategy.
 
 ## Guardrails
 

@@ -1,6 +1,6 @@
 ---
 name: stakeholder-simulation-scenario-plan
-description: Use when a marketer or go-to-market operator needs simulation scenario plan for Research / Audience Simulation work involving Synthetic audience simulation, Message testing, especially when the task must simulate stakeholder reactions to launches, messages, pricing, policy, or market events.
+description: Use when you need simulation scenario plan to simulate stakeholder reactions to launches, messages, pricing, policy, or market events.
 ---
 
 # stakeholder simulation scenario plan
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs simulation scena
 
 - Produce simulation scenario plan.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: stakeholder type, scenario, expected reaction, objection.
+- Use the artifact to decide: Which hypotheses are worth testing with real evidence.
+- Do not mark ready until: Synthetic output is labeled separately from observed evidence.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs simulation scena
 ## Output Contract
 
 Return simulation scenario plan. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not simulation scenario plan, the main decision is outside synthetic-audience-simulation, message-testing, or the user only needs broad strategy.
 
 ## Guardrails
 

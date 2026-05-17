@@ -1,6 +1,6 @@
 ---
 name: internal-knowledge-activation
-description: Use when a marketer or go-to-market operator needs knowledge activation plan for Marketing Agents / Governance work involving AI marketing agent workflow, Customer research synthesis, especially when the task must turn approved docs, calls, data, and research into safe inputs for AI-assisted marketing.
+description: Use when you need knowledge activation plan to turn approved docs, calls, data, and research into safe inputs for AI-assisted marketing.
 ---
 
 # internal knowledge activation
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs knowledge activa
 
 - Produce knowledge activation plan.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: approved doc, insight, access boundary, allowed use.
+- Use the artifact to decide: What the agent may draft, route, decide, or escalate.
+- Do not mark ready until: Every tool action has an input, output, owner, and fallback.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs knowledge activa
 ## Output Contract
 
 Return knowledge activation plan. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not knowledge activation plan, the main decision is outside ai-marketing-agent-workflow, customer-research-synthesis, or the user only needs broad strategy.
 
 ## Guardrails
 

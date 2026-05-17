@@ -1,6 +1,6 @@
 ---
 name: lead-list-prioritization-scorecard
-description: Use when a marketer or go-to-market operator needs lead scoring table and routing notes for Lead Intelligence / Conversion work involving Lead list building, Lead enrichment and research, especially when the task must score leads by fit, trigger, intent, evidence strength, urgency, and route.
+description: Use when you need lead scoring table and routing notes to score leads by fit, trigger, intent, evidence strength, urgency, and route.
 ---
 
 # lead list prioritization scorecard
@@ -10,6 +10,12 @@ description: Use when a marketer or go-to-market operator needs lead scoring tab
 - Produce lead scoring table and routing notes.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
 - Run `scripts/score_leads.py` when the user provides structured inputs for the repeatable table, scorecard, or checklist.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: record, fit score, intent score, evidence strength.
+- Use the artifact to decide: Which records qualify for action now.
+- Do not mark ready until: Every accepted record has fit, trigger, evidence, and a route.
 
 ## Workflow
 
@@ -21,6 +27,10 @@ description: Use when a marketer or go-to-market operator needs lead scoring tab
 ## Output Contract
 
 Return lead scoring table and routing notes. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not lead scoring table and routing notes, the main decision is outside lead-list-building, lead-enrichment-and-research, or the user only needs broad strategy.
 
 ## Guardrails
 

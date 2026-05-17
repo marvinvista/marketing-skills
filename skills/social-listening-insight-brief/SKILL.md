@@ -1,6 +1,6 @@
 ---
 name: social-listening-insight-brief
-description: Use when a marketer or go-to-market operator needs social listening brief for Content / Creator / Social work involving Customer research synthesis, Social content automation, especially when the task must turn reviews, social posts, comments, and communities into message and campaign insights.
+description: Use when you need social listening brief to turn reviews, social posts, comments, and communities into message and campaign insights.
 ---
 
 # social listening insight brief
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs social listening
 
 - Produce social listening brief.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: channel, post or comment, pain, language.
+- Use the artifact to decide: Which message, segment, or channel assumption changes.
+- Do not mark ready until: Observed evidence, synthesis, and recommendation are labeled separately.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs social listening
 ## Output Contract
 
 Return social listening brief. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not social listening brief, the main decision is outside customer-research-synthesis, social-content-automation, or the user only needs broad strategy.
 
 ## Guardrails
 

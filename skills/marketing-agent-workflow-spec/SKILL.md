@@ -1,6 +1,6 @@
 ---
 name: marketing-agent-workflow-spec
-description: Use when a marketer or go-to-market operator needs agent workflow spec for Marketing Agents / Governance work involving AI marketing agent workflow, Marketing ops orchestration, especially when the task must scope a bounded marketing agent by job, inputs, tools, review gates, and final artifact.
+description: Use when you need agent workflow spec to scope a bounded marketing agent by job, inputs, tools, review gates, and final artifact.
 ---
 
 # marketing agent workflow spec
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs agent workflow s
 
 - Produce agent workflow spec.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: job, input, tool, allowed action.
+- Use the artifact to decide: What the agent may draft, route, decide, or escalate.
+- Do not mark ready until: Every tool action has an input, output, owner, and fallback.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs agent workflow s
 ## Output Contract
 
 Return agent workflow spec. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not agent workflow spec, the main decision is outside ai-marketing-agent-workflow, marketing-ops-orchestration, or the user only needs broad strategy.
 
 ## Guardrails
 

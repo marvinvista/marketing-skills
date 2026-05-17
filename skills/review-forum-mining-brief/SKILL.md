@@ -1,6 +1,6 @@
 ---
 name: review-forum-mining-brief
-description: Use when a marketer or go-to-market operator needs review mining brief for Research / Audience Simulation work involving Customer research synthesis, Message testing, especially when the task must mine reviews, forums, communities, calls, and comments for pain, language, triggers, and objections.
+description: Use when you need review mining brief to mine reviews, forums, communities, calls, and comments for pain, language, triggers, and objections.
 ---
 
 # review forum mining brief
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs review mining br
 
 - Produce review mining brief.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: review or comment, evidence type, pain, language.
+- Use the artifact to decide: Which message, segment, or channel assumption changes.
+- Do not mark ready until: Observed evidence, synthesis, and recommendation are labeled separately.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs review mining br
 ## Output Contract
 
 Return review mining brief. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not review mining brief, the main decision is outside customer-research-synthesis, message-testing, or the user only needs broad strategy.
 
 ## Guardrails
 

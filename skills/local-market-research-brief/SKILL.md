@@ -1,6 +1,6 @@
 ---
 name: local-market-research-brief
-description: Use when a marketer or go-to-market operator needs local market research brief for Research / Audience Simulation work involving Customer research synthesis, Local storefront growth, Lead list building, especially when the task must turn local reviews, storefront signals, route context, and customer language into market insight.
+description: Use when you need local market research brief to turn local reviews, storefront signals, route context, and customer language into market insight.
 ---
 
 # local market research brief
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs local market res
 
 - Produce local market research brief.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: location, review signal, storefront gap, local language.
+- Use the artifact to decide: Which message, segment, or channel assumption changes.
+- Do not mark ready until: Observed evidence, synthesis, and recommendation are labeled separately.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs local market res
 ## Output Contract
 
 Return local market research brief. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not local market research brief, the main decision is outside customer-research-synthesis, local-storefront-growth, lead-list-building, or the user only needs broad strategy.
 
 ## Guardrails
 

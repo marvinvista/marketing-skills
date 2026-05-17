@@ -1,6 +1,6 @@
 ---
 name: interview-guide-builder
-description: Use when a marketer or go-to-market operator needs interview guide for Research / Audience Simulation work involving Customer research synthesis, especially when the task must create interview guides tied to buyer questions, objections, alternatives, and decision criteria.
+description: Use when you need interview guide to create interview guides tied to buyer questions, objections, alternatives, and decision criteria.
 ---
 
 # interview guide builder
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs interview guide 
 
 - Produce interview guide.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: buyer question, objection, alternative, decision criterion.
+- Use the artifact to decide: Which message, segment, or channel assumption changes.
+- Do not mark ready until: Observed evidence, synthesis, and recommendation are labeled separately.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs interview guide 
 ## Output Contract
 
 Return interview guide. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not interview guide, the main decision is outside customer-research-synthesis, or the user only needs broad strategy.
 
 ## Guardrails
 

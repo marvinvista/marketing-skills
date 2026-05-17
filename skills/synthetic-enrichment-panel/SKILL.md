@@ -1,6 +1,6 @@
 ---
 name: synthetic-enrichment-panel
-description: Use when a marketer or go-to-market operator needs synthetic enrichment panel for Research / Audience Simulation work involving Synthetic audience simulation, Lead enrichment and research, Customer research synthesis, especially when the task must test enrichment assumptions, personalization cues, confidence limits, and validation needs with synthetic panels.
+description: Use when you need synthetic enrichment panel to test enrichment assumptions, personalization cues, confidence limits, and validation needs with synthetic panels.
 ---
 
 # synthetic enrichment panel
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs synthetic enrich
 
 - Produce synthetic enrichment panel.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: enrichment assumption, persona, scenario, personalization cue.
+- Use the artifact to decide: Which hypotheses are worth testing with real evidence.
+- Do not mark ready until: Synthetic output is labeled separately from observed evidence.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs synthetic enrich
 ## Output Contract
 
 Return synthetic enrichment panel. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not synthetic enrichment panel, the main decision is outside synthetic-audience-simulation, lead-enrichment-and-research, customer-research-synthesis, or the user only needs broad strategy.
 
 ## Guardrails
 

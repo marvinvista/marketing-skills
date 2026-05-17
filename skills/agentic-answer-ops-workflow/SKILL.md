@@ -1,6 +1,6 @@
 ---
 name: agentic-answer-ops-workflow
-description: Use when a marketer or go-to-market operator needs agentic answer ops workflow for AI Search / Agent Discovery work involving AI marketing agent workflow, AI search visibility monitoring, Answer source remediation, especially when the task must orchestrate AI answer monitoring, evidence lookup, remediation actions, review gates, and telemetry.
+description: Use when you need agentic answer ops workflow to orchestrate AI answer monitoring, evidence lookup, remediation actions, review gates, and telemetry.
 ---
 
 # agentic answer ops workflow
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs agentic answer o
 
 - Produce agentic answer ops workflow.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: monitored prompt, agent job, allowed action, evidence lookup.
+- Use the artifact to decide: What the agent may draft, route, decide, or escalate.
+- Do not mark ready until: Every tool action has an input, output, owner, and fallback.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs agentic answer o
 ## Output Contract
 
 Return agentic answer ops workflow. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not agentic answer ops workflow, the main decision is outside ai-marketing-agent-workflow, ai-search-visibility-monitoring, answer-source-remediation, or the user only needs broad strategy.
 
 ## Guardrails
 

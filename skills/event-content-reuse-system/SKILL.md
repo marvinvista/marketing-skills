@@ -1,6 +1,6 @@
 ---
 name: event-content-reuse-system
-description: Use when a marketer or go-to-market operator needs event content reuse system for Content / Creator / Social work involving Social content automation, Lead list building, Outbound cadence automation, especially when the task must turn event, webinar, or field moments into social, email, ads, and sales follow-up assets.
+description: Use when you need event content reuse system to turn event, webinar, or field moments into social, email, ads, and sales follow-up assets.
 ---
 
 # event content reuse system
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs event content re
 
 - Produce event content reuse system.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: event moment, captured asset, lead signal, follow-up segment.
+- Use the artifact to decide: Which content repeats as a system versus a one-off post.
+- Do not mark ready until: Hooks, examples, CTAs, and review notes are channel-specific.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs event content re
 ## Output Contract
 
 Return event content reuse system. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not event content reuse system, the main decision is outside social-content-automation, lead-list-building, outbound-cadence-automation, or the user only needs broad strategy.
 
 ## Guardrails
 

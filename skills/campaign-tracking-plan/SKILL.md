@@ -1,6 +1,6 @@
 ---
 name: campaign-tracking-plan
-description: Use when a marketer or go-to-market operator needs campaign tracking plan for Lifecycle / Ops / Analytics work involving Campaign analytics QA, Marketing ops orchestration, especially when the task must define UTMs, events, properties, destinations, QA checks, and reporting owner.
+description: Use when you need campaign tracking plan to define UTMs, events, properties, destinations, QA checks, and reporting owner.
 ---
 
 # campaign tracking plan
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs campaign trackin
 
 - Produce campaign tracking plan.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: channel, UTM, event, property.
+- Use the artifact to decide: Which metrics are trustworthy enough for a decision.
+- Do not mark ready until: Tracking is tested before performance interpretation.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs campaign trackin
 ## Output Contract
 
 Return campaign tracking plan. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not campaign tracking plan, the main decision is outside campaign-analytics-qa, marketing-ops-orchestration, or the user only needs broad strategy.
 
 ## Guardrails
 

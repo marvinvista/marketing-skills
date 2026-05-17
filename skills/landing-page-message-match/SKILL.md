@@ -1,6 +1,6 @@
 ---
 name: landing-page-message-match
-description: Use when a marketer or go-to-market operator needs message-match landing page spec for Creative / Ads / Assets work involving Ad creative generation, Message testing, SEO content briefing, especially when the task must align ad angle, page headline, proof, objections, CTA, and tracking for a conversion path.
+description: Use when you need message-match landing page spec to align ad angle, page headline, proof, objections, CTA, and tracking for a conversion path.
 ---
 
 # landing page message match
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs message-match la
 
 - Produce message-match landing page spec.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: ad angle, page headline, proof block, objection block.
+- Use the artifact to decide: Which variable changes in the next creative test.
+- Do not mark ready until: Each creative variant changes one declared variable or is marked exploratory.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs message-match la
 ## Output Contract
 
 Return message-match landing page spec. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not message-match landing page spec, the main decision is outside ad-creative-generation, message-testing, seo-content-briefing, or the user only needs broad strategy.
 
 ## Guardrails
 

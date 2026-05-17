@@ -1,6 +1,6 @@
 ---
 name: interview-synthesis-matrix
-description: Use when a marketer or go-to-market operator needs interview synthesis matrix for Research / Audience Simulation work involving Customer research synthesis, especially when the task must synthesize interviews into themes, quotes, objections, segments, confidence, and implications.
+description: Use when you need interview synthesis matrix to synthesize interviews into themes, quotes, objections, segments, confidence, and implications.
 ---
 
 # interview synthesis matrix
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs interview synthe
 
 - Produce interview synthesis matrix.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: theme, quote, segment, objection.
+- Use the artifact to decide: Which message, segment, or channel assumption changes.
+- Do not mark ready until: Observed evidence, synthesis, and recommendation are labeled separately.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs interview synthe
 ## Output Contract
 
 Return interview synthesis matrix. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not interview synthesis matrix, the main decision is outside customer-research-synthesis, or the user only needs broad strategy.
 
 ## Guardrails
 

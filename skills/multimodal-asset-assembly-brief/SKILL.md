@@ -1,6 +1,6 @@
 ---
 name: multimodal-asset-assembly-brief
-description: Use when a marketer or go-to-market operator needs multimodal assembly brief for Creative / Ads / Assets work involving Ad creative generation, Video ad production, Product image generation, Brand governance review, especially when the task must compose image, video, voice, copy, captions, and landing proof into one coherent asset plan.
+description: Use when you need multimodal assembly brief to compose image, video, voice, copy, captions, and landing proof into one coherent asset plan.
 ---
 
 # multimodal asset assembly brief
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs multimodal assem
 
 - Produce multimodal assembly brief.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: format, image, video, voice.
+- Use the artifact to decide: Which variable changes in the next creative test.
+- Do not mark ready until: Each creative variant changes one declared variable or is marked exploratory.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs multimodal assem
 ## Output Contract
 
 Return multimodal assembly brief. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not multimodal assembly brief, the main decision is outside ad-creative-generation, video-ad-production, product-image-generation, brand-governance-review, or the user only needs broad strategy.
 
 ## Guardrails
 

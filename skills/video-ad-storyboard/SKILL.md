@@ -1,6 +1,6 @@
 ---
 name: video-ad-storyboard
-description: Use when a marketer or go-to-market operator needs video storyboard and shot list for Creative / Ads / Assets work involving Video ad production, Ad creative generation, especially when the task must structure video ads into hook, proof, product moment, objection, CTA, and edit notes.
+description: Use when you need video storyboard and shot list to structure video ads into hook, proof, product moment, objection, CTA, and edit notes.
 ---
 
 # video ad storyboard
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs video storyboard
 
 - Produce video storyboard and shot list.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: scene, hook, product moment, proof line.
+- Use the artifact to decide: Which moments belong in the first seconds versus proof body.
+- Do not mark ready until: The storyboard names timing, visual, line, caption, and CTA.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs video storyboard
 ## Output Contract
 
 Return video storyboard and shot list. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not video storyboard and shot list, the main decision is outside video-ad-production, ad-creative-generation, or the user only needs broad strategy.
 
 ## Guardrails
 

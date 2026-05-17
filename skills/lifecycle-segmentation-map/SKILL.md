@@ -1,6 +1,6 @@
 ---
 name: lifecycle-segmentation-map
-description: Use when a marketer or go-to-market operator needs lifecycle segmentation map for Lifecycle / Ops / Analytics work involving Audience data sync, Marketing ops orchestration, especially when the task must define lifecycle states, transitions, triggers, suppressions, and owner actions.
+description: Use when you need lifecycle segmentation map to define lifecycle states, transitions, triggers, suppressions, and owner actions.
 ---
 
 # lifecycle segmentation map
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs lifecycle segmen
 
 - Produce lifecycle segmentation map.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: state, transition, trigger, suppression.
+- Use the artifact to decide: Which audience is eligible for activation.
+- Do not mark ready until: Expected and actual counts are checked before activation.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs lifecycle segmen
 ## Output Contract
 
 Return lifecycle segmentation map. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not lifecycle segmentation map, the main decision is outside audience-data-sync, marketing-ops-orchestration, or the user only needs broad strategy.
 
 ## Guardrails
 

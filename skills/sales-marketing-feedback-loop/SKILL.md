@@ -1,6 +1,6 @@
 ---
 name: sales-marketing-feedback-loop
-description: Use when a marketer or go-to-market operator needs sales feedback loop for Lead Intelligence / Conversion work involving Lead list building, Customer research synthesis, Outbound cadence automation, especially when the task must convert sales replies, objections, disqualifiers, and wins into marketing list and message updates.
+description: Use when you need sales feedback loop to convert sales replies, objections, disqualifiers, and wins into marketing list and message updates.
 ---
 
 # sales marketing feedback loop
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs sales feedback l
 
 - Produce sales feedback loop.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: reply or objection, segment, message gap, list update.
+- Use the artifact to decide: Which records qualify for action now.
+- Do not mark ready until: Every accepted record has fit, trigger, evidence, and a route.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs sales feedback l
 ## Output Contract
 
 Return sales feedback loop. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not sales feedback loop, the main decision is outside lead-list-building, customer-research-synthesis, outbound-cadence-automation, or the user only needs broad strategy.
 
 ## Guardrails
 

@@ -1,6 +1,6 @@
 ---
 name: community-response-playbook
-description: Use when a marketer or go-to-market operator needs community response playbook for Content / Creator / Social work involving Social content automation, Brand governance review, especially when the task must draft response patterns for comments, questions, objections, praise, and moderation risk.
+description: Use when you need community response playbook to draft response patterns for comments, questions, objections, praise, and moderation risk.
 ---
 
 # community response playbook
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs community respon
 
 - Produce community response playbook.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: question type, response pattern, proof, escalation trigger.
+- Use the artifact to decide: Which content repeats as a system versus a one-off post.
+- Do not mark ready until: Hooks, examples, CTAs, and review notes are channel-specific.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs community respon
 ## Output Contract
 
 Return community response playbook. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not community response playbook, the main decision is outside social-content-automation, brand-governance-review, or the user only needs broad strategy.
 
 ## Guardrails
 

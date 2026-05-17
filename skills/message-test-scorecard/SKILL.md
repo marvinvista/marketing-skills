@@ -1,6 +1,6 @@
 ---
 name: message-test-scorecard
-description: Use when a marketer or go-to-market operator needs message test scorecard for Research / Audience Simulation work involving Message testing, Customer research synthesis, especially when the task must score messages by clarity, relevance, proof, differentiation, risk, and next-action strength.
+description: Use when you need message test scorecard to score messages by clarity, relevance, proof, differentiation, risk, and next-action strength.
 ---
 
 # message test scorecard
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs message test sco
 
 - Produce message test scorecard.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: message, audience, clarity, relevance.
+- Use the artifact to decide: Which message advances, changes, or gets rejected.
+- Do not mark ready until: Scores use explicit criteria instead of preference alone.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs message test sco
 ## Output Contract
 
 Return message test scorecard. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not message test scorecard, the main decision is outside message-testing, customer-research-synthesis, or the user only needs broad strategy.
 
 ## Guardrails
 

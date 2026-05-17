@@ -1,6 +1,6 @@
 ---
 name: positioning-claim-map
-description: Use when a marketer or go-to-market operator needs positioning claim map for Research / Audience Simulation work involving Customer research synthesis, especially when the task must map competitors, alternatives, claims, proof, objections, and whitespace.
+description: Use when you need positioning claim map to map competitors, alternatives, claims, proof, objections, and whitespace.
 ---
 
 # positioning claim map
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs positioning clai
 
 - Produce positioning claim map.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: alternative, claim, proof, objection.
+- Use the artifact to decide: Which message, segment, or channel assumption changes.
+- Do not mark ready until: Observed evidence, synthesis, and recommendation are labeled separately.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs positioning clai
 ## Output Contract
 
 Return positioning claim map. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not positioning claim map, the main decision is outside customer-research-synthesis, or the user only needs broad strategy.
 
 ## Guardrails
 

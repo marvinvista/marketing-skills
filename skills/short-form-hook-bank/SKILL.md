@@ -1,6 +1,6 @@
 ---
 name: short-form-hook-bank
-description: Use when a marketer or go-to-market operator needs hook bank and test notes for Creative / Ads / Assets work involving Video ad production, Social content automation, especially when the task must generate platform-specific hooks for short-form video while preserving proof and CTA.
+description: Use when you need hook bank and test notes to generate platform-specific hooks for short-form video while preserving proof and CTA.
 ---
 
 # short-form hook bank
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs hook bank and te
 
 - Produce hook bank and test notes.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: platform, hook type, opening line, proof cue.
+- Use the artifact to decide: Which moments belong in the first seconds versus proof body.
+- Do not mark ready until: The storyboard names timing, visual, line, caption, and CTA.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs hook bank and te
 ## Output Contract
 
 Return hook bank and test notes. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not hook bank and test notes, the main decision is outside video-ad-production, social-content-automation, or the user only needs broad strategy.
 
 ## Guardrails
 

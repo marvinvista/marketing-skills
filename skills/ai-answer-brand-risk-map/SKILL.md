@@ -1,6 +1,6 @@
 ---
 name: ai-answer-brand-risk-map
-description: Use when a marketer or go-to-market operator needs AI answer brand risk map for AI Search / Agent Discovery work involving AI search visibility monitoring, Brand governance review, Answer source remediation, especially when the task must connect answer visibility observations to brand risk, claim status, proof gaps, and correction owners.
+description: Use when you need AI answer brand risk map to connect answer visibility observations to brand risk, claim status, proof gaps, and correction owners.
 ---
 
 # AI answer brand risk map
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs AI answer brand 
 
 - Produce AI answer brand risk map.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: priority prompt, observed answer, brand risk, claim status.
+- Use the artifact to decide: Which prompts need monitoring, remediation, or new proof.
+- Do not mark ready until: Observed answer text is separated from interpretation.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs AI answer brand 
 ## Output Contract
 
 Return AI answer brand risk map. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not AI answer brand risk map, the main decision is outside ai-search-visibility-monitoring, brand-governance-review, answer-source-remediation, or the user only needs broad strategy.
 
 ## Guardrails
 

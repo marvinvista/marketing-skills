@@ -1,6 +1,6 @@
 ---
 name: attribution-diagnostic
-description: Use when a marketer or go-to-market operator needs attribution diagnostic for Lifecycle / Ops / Analytics work involving Campaign analytics QA, especially when the task must find attribution gaps across source capture, conversion events, identity, routing, and reporting.
+description: Use when you need attribution diagnostic to find attribution gaps across source capture, conversion events, identity, routing, and reporting.
 ---
 
 # attribution diagnostic
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs attribution diag
 
 - Produce attribution diagnostic.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: touchpoint, source capture, identity link, conversion event.
+- Use the artifact to decide: Which metrics are trustworthy enough for a decision.
+- Do not mark ready until: Tracking is tested before performance interpretation.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs attribution diag
 ## Output Contract
 
 Return attribution diagnostic. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not attribution diagnostic, the main decision is outside campaign-analytics-qa, or the user only needs broad strategy.
 
 ## Guardrails
 

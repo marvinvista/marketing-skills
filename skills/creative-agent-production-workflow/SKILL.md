@@ -1,6 +1,6 @@
 ---
 name: creative-agent-production-workflow
-description: Use when a marketer or go-to-market operator needs creative agent production workflow for Creative / Ads / Assets work involving Ad creative generation, AI marketing agent workflow, especially when the task must scope an AI workflow for generating creative variants, applying review gates, and handing off approved assets.
+description: Use when you need creative agent production workflow to scope an AI workflow for generating creative variants, applying review gates, and handing off approved assets.
 ---
 
 # creative agent production workflow
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs creative agent p
 
 - Produce creative agent production workflow.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: agent job, input brief, variant rule, generation step.
+- Use the artifact to decide: Which variable changes in the next creative test.
+- Do not mark ready until: Each creative variant changes one declared variable or is marked exploratory.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs creative agent p
 ## Output Contract
 
 Return creative agent production workflow. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not creative agent production workflow, the main decision is outside ad-creative-generation, ai-marketing-agent-workflow, or the user only needs broad strategy.
 
 ## Guardrails
 

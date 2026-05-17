@@ -1,6 +1,6 @@
 ---
 name: local-business-prospecting-route
-description: Use when a marketer or go-to-market operator needs local prospecting route for Lead Intelligence / Conversion work involving Local storefront growth, Lead list building, especially when the task must find local accounts or locations, prioritize routes, and prepare direct outreach.
+description: Use when you need local prospecting route to find local accounts or locations, prioritize routes, and prepare direct outreach.
 ---
 
 # local business prospecting route
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs local prospectin
 
 - Produce local prospecting route.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: location, category, fit, local proof.
+- Use the artifact to decide: Which local targets get field action versus digital follow-up.
+- Do not mark ready until: Routes are prioritized by fit, proximity, and actionability.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs local prospectin
 ## Output Contract
 
 Return local prospecting route. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not local prospecting route, the main decision is outside local-storefront-growth, lead-list-building, or the user only needs broad strategy.
 
 ## Guardrails
 

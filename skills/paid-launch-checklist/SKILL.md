@@ -1,6 +1,6 @@
 ---
 name: paid-launch-checklist
-description: Use when a marketer or go-to-market operator needs paid launch checklist for Creative / Ads / Assets work involving Ad creative generation, Campaign analytics QA, Marketing ops orchestration, especially when the task must turn creative, targeting, budget, tracking, approvals, and rollback into a launch checklist.
+description: Use when you need paid launch checklist to turn creative, targeting, budget, tracking, approvals, and rollback into a launch checklist.
 ---
 
 # paid launch checklist
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs paid launch chec
 
 - Produce paid launch checklist.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: asset, audience, budget, conversion event.
+- Use the artifact to decide: Which variable changes in the next creative test.
+- Do not mark ready until: Each creative variant changes one declared variable or is marked exploratory.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs paid launch chec
 ## Output Contract
 
 Return paid launch checklist. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not paid launch checklist, the main decision is outside ad-creative-generation, campaign-analytics-qa, marketing-ops-orchestration, or the user only needs broad strategy.
 
 ## Guardrails
 

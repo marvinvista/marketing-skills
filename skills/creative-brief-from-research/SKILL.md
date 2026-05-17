@@ -1,6 +1,6 @@
 ---
 name: creative-brief-from-research
-description: Use when a marketer or go-to-market operator needs creative brief with claims, proof, and constraints for Creative / Ads / Assets work involving Ad creative generation, Customer research synthesis, especially when the task must convert audience insight, proof, and objections into a production-ready creative brief.
+description: Use when you need creative brief with claims, proof, and constraints to convert audience insight, proof, and objections into a production-ready creative brief.
 ---
 
 # creative brief from research
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs creative brief w
 
 - Produce creative brief with claims, proof, and constraints.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: insight, audience, claim, proof.
+- Use the artifact to decide: Which variable changes in the next creative test.
+- Do not mark ready until: Each creative variant changes one declared variable or is marked exploratory.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs creative brief w
 ## Output Contract
 
 Return creative brief with claims, proof, and constraints. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not creative brief with claims, proof, and constraints, the main decision is outside ad-creative-generation, customer-research-synthesis, or the user only needs broad strategy.
 
 ## Guardrails
 

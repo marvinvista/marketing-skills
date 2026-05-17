@@ -1,6 +1,6 @@
 ---
 name: visitor-list-routing-plan
-description: Use when a marketer or go-to-market operator needs visitor list routing plan for Lead Intelligence / Conversion work involving Website visitor identification, Lead list building, especially when the task must connect visit signals, list membership, intent thresholds, confidence, suppression, and follow-up routing.
+description: Use when you need visitor list routing plan to connect visit signals, list membership, intent thresholds, confidence, suppression, and follow-up routing.
 ---
 
 # visitor list routing plan
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs visitor list rou
 
 - Produce visitor list routing plan.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: visit signal, matched account, list membership, intent threshold.
+- Use the artifact to decide: Which visits trigger sales, nurture, retargeting, or no action.
+- Do not mark ready until: Confidence level and evidence are visible before routing.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs visitor list rou
 ## Output Contract
 
 Return visitor list routing plan. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not visitor list routing plan, the main decision is outside website-visitor-identification, lead-list-building, or the user only needs broad strategy.
 
 ## Guardrails
 

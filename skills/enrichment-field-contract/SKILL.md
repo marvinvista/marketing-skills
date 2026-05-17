@@ -1,6 +1,6 @@
 ---
 name: enrichment-field-contract
-description: Use when a marketer or go-to-market operator needs enrichment field contract for Lead Intelligence / Conversion work involving Lead enrichment and research, Audience data sync, especially when the task must define enrichment fields, source priority, freshness, usage, and fallback behavior.
+description: Use when you need enrichment field contract to define enrichment fields, source priority, freshness, usage, and fallback behavior.
 ---
 
 # enrichment field contract
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs enrichment field
 
 - Produce enrichment field contract.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: field, source priority, freshness, confidence.
+- Use the artifact to decide: Which fields change score, route, or message.
+- Do not mark ready until: Every enrichment field has a usage rule and freshness standard.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs enrichment field
 ## Output Contract
 
 Return enrichment field contract. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not enrichment field contract, the main decision is outside lead-enrichment-and-research, audience-data-sync, or the user only needs broad strategy.
 
 ## Guardrails
 

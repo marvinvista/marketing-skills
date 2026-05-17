@@ -1,6 +1,6 @@
 ---
 name: chat-lead-routing-flow
-description: Use when a marketer or go-to-market operator needs chat lead routing flow for Lead Intelligence / Conversion work involving Inbound chat qualification, Lead list building, especially when the task must turn chat qualification answers into list membership, owner routing, follow-up timing, and suppression-aware actions.
+description: Use when you need chat lead routing flow to turn chat qualification answers into list membership, owner routing, follow-up timing, and suppression-aware actions.
 ---
 
 # chat lead routing flow
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs chat lead routin
 
 - Produce chat lead routing flow.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: chat answer, qualification score, list membership, fit rule.
+- Use the artifact to decide: Which visitors book, route to a human, nurture, or exit.
+- Do not mark ready until: Each question changes routing or qualification.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs chat lead routin
 ## Output Contract
 
 Return chat lead routing flow. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not chat lead routing flow, the main decision is outside inbound-chat-qualification, lead-list-building, or the user only needs broad strategy.
 
 ## Guardrails
 

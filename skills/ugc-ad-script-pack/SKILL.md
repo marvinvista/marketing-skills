@@ -1,6 +1,6 @@
 ---
 name: ugc-ad-script-pack
-description: Use when a marketer or go-to-market operator needs UGC script pack for Creative / Ads / Assets work involving UGC creator workflow, Ad creative generation, especially when the task must write creator-style ad scripts with believable hooks, proof moments, and usage constraints.
+description: Use when you need UGC script pack to write creator-style ad scripts with believable hooks, proof moments, and usage constraints.
 ---
 
 # UGC ad script pack
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs UGC script pack 
 
 - Produce UGC script pack.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: creator persona, hook, story beat, product use.
+- Use the artifact to decide: Which creators or assets are approved, revised, renewed, or reused.
+- Do not mark ready until: Rights, usage windows, and edit permissions are explicit.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs UGC script pack 
 ## Output Contract
 
 Return UGC script pack. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not UGC script pack, the main decision is outside ugc-creator-workflow, ad-creative-generation, or the user only needs broad strategy.
 
 ## Guardrails
 

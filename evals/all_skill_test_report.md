@@ -10,6 +10,7 @@ Run date: 2026-05-17
 - Helper tests passed: 4
 - Install-copy test: passed for every skill
 - Packaging and utility threshold: passed for every skill
+- Behavior contracts: passed for every skill, including 10 deep edge-case fixtures
 - Boundary scan: passed
 
 ## Method
@@ -17,6 +18,7 @@ Run date: 2026-05-17
 - Copied every skill into a temporary install root and verified required files.
 - Checked OpenAI-style progressive disclosure: concise `SKILL.md`, trigger frontmatter, agent metadata, and detailed `references/pattern.md`.
 - Checked usefulness criteria: explicit inputs, decision rules, procedure, artifact fields, QA checks, failure modes, proof metrics, and next action.
+- Verified prompt-to-artifact behavior contracts for every skill and deeper edge-case contracts for the highest-risk skills.
 - Ran every helper-backed skill test.
 
 ## Results

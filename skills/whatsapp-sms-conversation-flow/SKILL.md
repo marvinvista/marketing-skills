@@ -1,6 +1,6 @@
 ---
 name: whatsapp-sms-conversation-flow
-description: Use when a marketer or go-to-market operator needs messaging conversation flow for Lifecycle / Ops / Analytics work involving Marketing ops orchestration, Outbound cadence automation, Inbound chat qualification, especially when the task must design compliant conversational flows for SMS, WhatsApp, or messaging channels.
+description: Use when you need messaging conversation flow to design compliant conversational flows for SMS, WhatsApp, or messaging channels.
 ---
 
 # WhatsApp SMS conversation flow
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs messaging conver
 
 - Produce messaging conversation flow.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: channel, consent state, message step, branch.
+- Use the artifact to decide: Which work can launch, wait, or roll back.
+- Do not mark ready until: Every dependency has an owner and failure fallback.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs messaging conver
 ## Output Contract
 
 Return messaging conversation flow. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not messaging conversation flow, the main decision is outside marketing-ops-orchestration, outbound-cadence-automation, inbound-chat-qualification, or the user only needs broad strategy.
 
 ## Guardrails
 

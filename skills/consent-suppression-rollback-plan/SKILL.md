@@ -1,6 +1,6 @@
 ---
 name: consent-suppression-rollback-plan
-description: Use when a marketer or go-to-market operator needs consent and rollback plan for Lifecycle / Ops / Analytics work involving Marketing ops orchestration, Brand governance review, especially when the task must define consent checks, suppression rules, privacy review, rollback path, and incident owner.
+description: Use when you need consent and rollback plan to define consent checks, suppression rules, privacy review, rollback path, and incident owner.
 ---
 
 # consent suppression rollback plan
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs consent and roll
 
 - Produce consent and rollback plan.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: consent rule, suppression list, risky action, rollback trigger.
+- Use the artifact to decide: Which work can launch, wait, or roll back.
+- Do not mark ready until: Every dependency has an owner and failure fallback.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs consent and roll
 ## Output Contract
 
 Return consent and rollback plan. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not consent and rollback plan, the main decision is outside marketing-ops-orchestration, brand-governance-review, or the user only needs broad strategy.
 
 ## Guardrails
 

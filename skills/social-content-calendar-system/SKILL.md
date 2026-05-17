@@ -1,6 +1,6 @@
 ---
 name: social-content-calendar-system
-description: Use when a marketer or go-to-market operator needs social calendar and posting system for Content / Creator / Social work involving Social content automation, especially when the task must turn narrative pillars, campaign moments, and channel rules into a reusable content calendar.
+description: Use when you need social calendar and posting system to turn narrative pillars, campaign moments, and channel rules into a reusable content calendar.
 ---
 
 # social content calendar system
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs social calendar 
 
 - Produce social calendar and posting system.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: pillar, channel, format, hook.
+- Use the artifact to decide: Which content repeats as a system versus a one-off post.
+- Do not mark ready until: Hooks, examples, CTAs, and review notes are channel-specific.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs social calendar 
 ## Output Contract
 
 Return social calendar and posting system. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not social calendar and posting system, the main decision is outside social-content-automation, or the user only needs broad strategy.
 
 ## Guardrails
 

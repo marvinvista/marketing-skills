@@ -1,6 +1,6 @@
 ---
 name: creator-performance-reuse-readout
-description: Use when a marketer or go-to-market operator needs creator performance readout for Content / Creator / Social work involving UGC creator workflow, Social content automation, Campaign analytics QA, especially when the task must evaluate creator assets for performance, learning, renewal, and paid reuse decisions.
+description: Use when you need creator performance readout to evaluate creator assets for performance, learning, renewal, and paid reuse decisions.
 ---
 
 # creator performance reuse readout
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs creator performa
 
 - Produce creator performance readout.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: creator asset, spend or organic context, performance signal, learning.
+- Use the artifact to decide: Which creators or assets are approved, revised, renewed, or reused.
+- Do not mark ready until: Rights, usage windows, and edit permissions are explicit.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs creator performa
 ## Output Contract
 
 Return creator performance readout. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not creator performance readout, the main decision is outside ugc-creator-workflow, social-content-automation, campaign-analytics-qa, or the user only needs broad strategy.
 
 ## Guardrails
 

@@ -1,6 +1,6 @@
 ---
 name: agentic-video-production-workflow
-description: Use when a marketer or go-to-market operator needs agentic video production workflow for Creative / Ads / Assets work involving AI marketing agent workflow, Video ad production, especially when the task must scope agent-assisted video production from script inputs through scene generation, edit checks, and delivery state.
+description: Use when you need agentic video production workflow to scope agent-assisted video production from script inputs through scene generation, edit checks, and delivery state.
 ---
 
 # agentic video production workflow
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs agentic video pr
 
 - Produce agentic video production workflow.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: video job, script input, scene generation, voice or caption rule.
+- Use the artifact to decide: What the agent may draft, route, decide, or escalate.
+- Do not mark ready until: Every tool action has an input, output, owner, and fallback.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs agentic video pr
 ## Output Contract
 
 Return agentic video production workflow. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not agentic video production workflow, the main decision is outside ai-marketing-agent-workflow, video-ad-production, or the user only needs broad strategy.
 
 ## Guardrails
 

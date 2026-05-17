@@ -1,6 +1,6 @@
 ---
 name: generative-search-weekly-ops-report
-description: Use when a marketer or go-to-market operator needs weekly ops report with actions for AI Search / Agent Discovery work involving AI search visibility monitoring, Answer source remediation, Campaign analytics QA, especially when the task must turn answer visibility, citation gaps, traffic signal, and shipped fixes into a recurring operator report.
+description: Use when you need weekly ops report with actions to turn answer visibility, citation gaps, traffic signal, and shipped fixes into a recurring operator report.
 ---
 
 # generative search weekly ops report
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs weekly ops repor
 
 - Produce weekly ops report with actions.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: prompt movement, citation gap, shipped fix, traffic signal.
+- Use the artifact to decide: Which prompts need monitoring, remediation, or new proof.
+- Do not mark ready until: Observed answer text is separated from interpretation.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs weekly ops repor
 ## Output Contract
 
 Return weekly ops report with actions. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not weekly ops report with actions, the main decision is outside ai-search-visibility-monitoring, answer-source-remediation, campaign-analytics-qa, or the user only needs broad strategy.
 
 ## Guardrails
 

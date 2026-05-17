@@ -1,6 +1,6 @@
 ---
 name: answer-ready-content-brief
-description: Use when a marketer or go-to-market operator needs answer-ready content brief for AI Search / Agent Discovery work involving SEO content briefing, Answer source remediation, especially when the task must write content briefs for missing questions with answer structure, evidence, and schema needs.
+description: Use when you need answer-ready content brief to write content briefs for missing questions with answer structure, evidence, and schema needs.
 ---
 
 # answer-ready content brief
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs answer-ready con
 
 - Produce answer-ready content brief.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: target question, intent, answer block, proof.
+- Use the artifact to decide: Which page, section, or proof asset should be created or refreshed.
+- Do not mark ready until: Each brief includes the answer, proof, schema need, and indexability check.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs answer-ready con
 ## Output Contract
 
 Return answer-ready content brief. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not answer-ready content brief, the main decision is outside seo-content-briefing, answer-source-remediation, or the user only needs broad strategy.
 
 ## Guardrails
 

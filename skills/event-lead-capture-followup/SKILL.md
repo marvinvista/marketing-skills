@@ -1,6 +1,6 @@
 ---
 name: event-lead-capture-followup
-description: Use when a marketer or go-to-market operator needs event follow-up plan for Lead Intelligence / Conversion work involving Lead list building, Outbound cadence automation, Marketing ops orchestration, especially when the task must turn event scans, meetings, booth notes, and field signals into segmented follow-up.
+description: Use when you need event follow-up plan to turn event scans, meetings, booth notes, and field signals into segmented follow-up.
 ---
 
 # event lead capture follow-up
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs event follow-up 
 
 - Produce event follow-up plan.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: event note, lead segment, booth context, meeting signal.
+- Use the artifact to decide: Which records qualify for action now.
+- Do not mark ready until: Every accepted record has fit, trigger, evidence, and a route.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs event follow-up 
 ## Output Contract
 
 Return event follow-up plan. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not event follow-up plan, the main decision is outside lead-list-building, outbound-cadence-automation, marketing-ops-orchestration, or the user only needs broad strategy.
 
 ## Guardrails
 

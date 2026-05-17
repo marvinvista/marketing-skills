@@ -1,6 +1,6 @@
 ---
 name: citable-proof-asset-kit
-description: Use when a marketer or go-to-market operator needs proof kit and publishing checklist for AI Search / Agent Discovery work involving Answer source remediation, Brand governance review, especially when the task must package claims, proof, press, docs, FAQs, and comparison assets so answers have better evidence to cite.
+description: Use when you need proof kit and publishing checklist to package claims, proof, press, docs, FAQs, and comparison assets so answers have better evidence to cite.
 ---
 
 # citable proof asset kit
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs proof kit and pu
 
 - Produce proof kit and publishing checklist.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: claim, proof asset, format, audience question.
+- Use the artifact to decide: Which proof, page, listing, or data fix ships first.
+- Do not mark ready until: Every remediation item ties to a specific answer gap.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs proof kit and pu
 ## Output Contract
 
 Return proof kit and publishing checklist. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not proof kit and publishing checklist, the main decision is outside answer-source-remediation, brand-governance-review, or the user only needs broad strategy.
 
 ## Guardrails
 

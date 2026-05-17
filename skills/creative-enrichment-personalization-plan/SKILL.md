@@ -1,6 +1,6 @@
 ---
 name: creative-enrichment-personalization-plan
-description: Use when a marketer or go-to-market operator needs creative personalization plan for Creative / Ads / Assets work involving Ad creative generation, Lead enrichment and research, especially when the task must turn enrichment fields into personalization claims, creative variants, confidence checks, and fallback copy.
+description: Use when you need creative personalization plan to turn enrichment fields into personalization claims, creative variants, confidence checks, and fallback copy.
 ---
 
 # creative enrichment personalization plan
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs creative persona
 
 - Produce creative personalization plan.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: enrichment field, audience cue, personalization claim, creative variant.
+- Use the artifact to decide: Which variable changes in the next creative test.
+- Do not mark ready until: Each creative variant changes one declared variable or is marked exploratory.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs creative persona
 ## Output Contract
 
 Return creative personalization plan. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not creative personalization plan, the main decision is outside ad-creative-generation, lead-enrichment-and-research, or the user only needs broad strategy.
 
 ## Guardrails
 

@@ -1,6 +1,6 @@
 ---
 name: ai-referral-roi-readout
-description: Use when a marketer or go-to-market operator needs AI referral readout and dashboard spec for AI Search / Agent Discovery work involving AI search visibility monitoring, Campaign analytics QA, especially when the task must read AI referrals, bot traffic, assisted conversion, and revenue signal without over-claiming attribution.
+description: Use when you need AI referral readout and dashboard spec to read AI referrals, bot traffic, assisted conversion, and revenue signal without over-claiming attribution.
 ---
 
 # AI referral ROI readout
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs AI referral read
 
 - Produce AI referral readout and dashboard spec.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: referral surface, traffic type, session path, assisted event.
+- Use the artifact to decide: Which prompts need monitoring, remediation, or new proof.
+- Do not mark ready until: Observed answer text is separated from interpretation.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs AI referral read
 ## Output Contract
 
 Return AI referral readout and dashboard spec. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not AI referral readout and dashboard spec, the main decision is outside ai-search-visibility-monitoring, campaign-analytics-qa, or the user only needs broad strategy.
 
 ## Guardrails
 

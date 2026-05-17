@@ -1,6 +1,6 @@
 ---
 name: creator-discovery-scorecard
-description: Use when a marketer or go-to-market operator needs creator scorecard for Content / Creator / Social work involving UGC creator workflow, Social content automation, Customer research synthesis, especially when the task must score creators by audience fit, trust, content quality, risk, usage rights, and expected lift.
+description: Use when you need creator scorecard to score creators by audience fit, trust, content quality, risk, usage rights, and expected lift.
 ---
 
 # creator discovery scorecard
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs creator scorecar
 
 - Produce creator scorecard.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: creator, audience fit, trust signal, content quality.
+- Use the artifact to decide: Which creators or assets are approved, revised, renewed, or reused.
+- Do not mark ready until: Rights, usage windows, and edit permissions are explicit.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs creator scorecar
 ## Output Contract
 
 Return creator scorecard. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not creator scorecard, the main decision is outside ugc-creator-workflow, social-content-automation, customer-research-synthesis, or the user only needs broad strategy.
 
 ## Guardrails
 

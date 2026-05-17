@@ -1,6 +1,6 @@
 ---
 name: ugc-intake-rights-workflow
-description: Use when a marketer or go-to-market operator needs UGC intake and rights workflow for Content / Creator / Social work involving UGC creator workflow, Ad creative generation, especially when the task must manage creator asset intake, rights, tagging, approvals, edits, and paid reuse.
+description: Use when you need UGC intake and rights workflow to manage creator asset intake, rights, tagging, approvals, edits, and paid reuse.
 ---
 
 # UGC intake rights workflow
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs UGC intake and r
 
 - Produce UGC intake and rights workflow.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: asset, creator, rights window, edit permission.
+- Use the artifact to decide: Which creators or assets are approved, revised, renewed, or reused.
+- Do not mark ready until: Rights, usage windows, and edit permissions are explicit.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs UGC intake and r
 ## Output Contract
 
 Return UGC intake and rights workflow. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not UGC intake and rights workflow, the main decision is outside ugc-creator-workflow, ad-creative-generation, or the user only needs broad strategy.
 
 ## Guardrails
 

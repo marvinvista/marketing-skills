@@ -1,6 +1,6 @@
 ---
 name: linkedin-prospecting-cadence
-description: Use when a marketer or go-to-market operator needs LinkedIn cadence for Lead Intelligence / Conversion work involving Outbound cadence automation, especially when the task must create connection, message, follow-up, and stop rules for LinkedIn prospecting.
+description: Use when you need LinkedIn cadence to create connection, message, follow-up, and stop rules for LinkedIn prospecting.
 ---
 
 # LinkedIn prospecting cadence
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs LinkedIn cadence
 
 - Produce LinkedIn cadence.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: connection reason, first note, follow-up step, proof.
+- Use the artifact to decide: Which step runs, stops, or escalates based on signal.
+- Do not mark ready until: Every step has a trigger, wait rule, stop rule, and reply route.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs LinkedIn cadence
 ## Output Contract
 
 Return LinkedIn cadence. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not LinkedIn cadence, the main decision is outside outbound-cadence-automation, or the user only needs broad strategy.
 
 ## Guardrails
 

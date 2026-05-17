@@ -1,6 +1,6 @@
 ---
 name: tool-orchestration-map
-description: Use when a marketer or go-to-market operator needs tool orchestration map for Marketing Agents / Governance work involving AI marketing agent workflow, especially when the task must map model calls, tools, data access, human handoffs, and fallback paths.
+description: Use when you need tool orchestration map to map model calls, tools, data access, human handoffs, and fallback paths.
 ---
 
 # tool orchestration map
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs tool orchestrati
 
 - Produce tool orchestration map.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: model call, tool, input, output.
+- Use the artifact to decide: What the agent may draft, route, decide, or escalate.
+- Do not mark ready until: Every tool action has an input, output, owner, and fallback.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs tool orchestrati
 ## Output Contract
 
 Return tool orchestration map. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not tool orchestration map, the main decision is outside ai-marketing-agent-workflow, or the user only needs broad strategy.
 
 ## Guardrails
 

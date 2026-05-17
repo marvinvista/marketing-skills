@@ -16,10 +16,31 @@ Representative skills evaluated:
 
 ## What Changed
 
-- Sharpened all skill frontmatter descriptions into explicit `Use when...` trigger language.
+- Sharpened all skill frontmatter descriptions into concise `Use when...` trigger language.
+- Added a skill-specific checklist and boundary to every `SKILL.md` wrapper so the entry layer is no longer just category-level boilerplate.
+- Added prompt-to-artifact behavior contracts for all skills, including deep edge-case fixtures for the 10 highest-risk skills.
 - Added focused script behavior tests for the four helper-backed skills.
 - Reduced helper script readability warnings that showed up in the initial eval pass.
 - Kept detailed mechanics in `references/pattern.md` and left `SKILL.md` compact.
+
+## Full Plugin Eval Pass
+
+The full per-skill Plugin Eval run is stored in `evals/plugin_eval_all_skills.md` and `evals/plugin_eval_all_skills.json`.
+
+- Skills evaluated individually: 116
+- Gate failures: 0
+- Low-risk skills: 116
+- Minimum score: 100/100
+- Maximum active budget: 532 tokens
+- Maximum trigger cost: 52 tokens
+
+## Behavior Contract Pass
+
+The prompt-to-artifact contracts are stored in `evals/all_skill_behavior_contracts.md` and `evals/all_skill_behavior_contracts.json`.
+
+- Skills with contracts: 116
+- Deep edge-case fixtures: 10
+- Covered fixtures: meta-eval quality, agent autonomy, hallucinated claims, voice drift, answer scoring, share-of-answer aggregation, creative compliance, visitor routing, audience sync, and consent rollback.
 
 ## Real Codex Smoke Test
 

@@ -1,6 +1,6 @@
 ---
 name: email-template-system
-description: Use when a marketer or go-to-market operator needs email template system for Lifecycle / Ops / Analytics work involving Marketing ops orchestration, Outbound cadence automation, especially when the task must create reusable templates, dynamic fields, QA states, and version rules.
+description: Use when you need email template system to create reusable templates, dynamic fields, QA states, and version rules.
 ---
 
 # email template system
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs email template s
 
 - Produce email template system.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: template, dynamic field, segment, proof block.
+- Use the artifact to decide: Which work can launch, wait, or roll back.
+- Do not mark ready until: Every dependency has an owner and failure fallback.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs email template s
 ## Output Contract
 
 Return email template system. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not email template system, the main decision is outside marketing-ops-orchestration, outbound-cadence-automation, or the user only needs broad strategy.
 
 ## Guardrails
 

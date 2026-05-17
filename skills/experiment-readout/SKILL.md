@@ -1,6 +1,6 @@
 ---
 name: experiment-readout
-description: Use when a marketer or go-to-market operator needs experiment readout for Lifecycle / Ops / Analytics work involving Campaign analytics QA, Message testing, especially when the task must summarize experiment result, confidence, tradeoffs, decision, and next test.
+description: Use when you need experiment readout to summarize experiment result, confidence, tradeoffs, decision, and next test.
 ---
 
 # experiment readout
@@ -9,6 +9,12 @@ description: Use when a marketer or go-to-market operator needs experiment reado
 
 - Produce experiment readout.
 - Read `references/pattern.md` before drafting; it contains product mechanics, required inputs, decision rules, artifact fields, QA checks, failure modes, proof metrics, and an example prompt.
+
+## Skill-Specific Checklist
+
+- Anchor the artifact around these fields: hypothesis, variant, result, confidence.
+- Use the artifact to decide: Which metrics are trustworthy enough for a decision.
+- Do not mark ready until: Tracking is tested before performance interpretation.
 
 ## Workflow
 
@@ -20,6 +26,10 @@ description: Use when a marketer or go-to-market operator needs experiment reado
 ## Output Contract
 
 Return experiment readout. Include the decision supported, required inputs, generated artifact, QA checks, failure modes, proof metric, and next action.
+
+## Boundary
+
+Use another skill if the final artifact is not experiment readout, the main decision is outside campaign-analytics-qa, message-testing, or the user only needs broad strategy.
 
 ## Guardrails
 
